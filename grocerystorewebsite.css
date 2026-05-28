@@ -1,0 +1,31 @@
+p{
+     color: black;   
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 15px; 
+     background-color: beige;
+     border: 2px solid black;
+     padding: 5px;
+     margin: 5px;
+     font-weight: 100;
+}
+img{
+    height: 150px;
+    width: 150px;
+}
+#id1{
+    padding: 10px;
+    margin: 9px;
+}
+.class2{
+ background-color: whitesmoke;
+}
+#id2{
+    text-align: center;
+}
+.class2{
+    padding: 10px;
+    margin: 9px;
+    background-color: bisque;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: auto;
+}
