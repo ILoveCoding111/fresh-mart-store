@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #cars{
+        color: solid black;
+    }
+</style>
+<body>
+    <h1>Want to see how much your car is worth?
+    </h1>
+    <h1>
+        Then enter your number plate and some simple details below to get a full description sent straight to your house.
+    </h1>
+    <h2>
+        You can choose between an actual letter or an email.
+    </h2>
+    <form>
+        <label>First Name</label>
+        <input type="text">
+        <br>
+        <br>
+        <label>Last Name</label>
+        <input type="text">
+        <br>
+        <br>
+        <label>Email</label>
+        <input type="email">
+        <br>
+        <br>
+        <label>License Plate</label>
+    <input 
+  type="text" 
+  id="licensePlate" 
+  name="licensePlate" 
+  autocapitalize="characters" 
+  placeholder="ABC1234"
+  required
+ pattern="[A-Za-z0-9]+" 
+  title="Only letters and numbers are allowed. No spaces or symbols."
+  maxlength="7"
+  minlength="7">
+    <br>
+    <br>
+    <label>Address</label>
+    <br>
+    <br>
+    <textarea rows="5" cols="15"></textarea>
+    <br>
+    <br>
+    <label>Mileage</label>
+    <input type="number">
+    <br>
+    <br>
+    <label>Brand</label>
+    <input type="text">
+    <br>
+    <br>
+    <label>Model</label>
+    <input type="text">
+    <br>
+    <br>
+    <label>Gender</label>
+    <br>
+    <br>
+    <input type="radio" name="Gender"> Male
+    <input type="radio" name="Gender"> Female
+    <input type="radio" name="Gender"> Others
+    <br>   
+    <br>
+     <label>How you want to receive it.</label>
+        <select><option>Letter</option>
+        <option>Email</option>
+        <option>Both</option></select>
+        <br>
+        <br>
+                <div class="checkbox-item">
+            <label for="audi">Audi</label>
+            <input type="checkbox" id="audi" name="audi" value="audi">
+        </div>
+        <div class="checkbox-item">
+            <label for="volkswagen">Volkswagen</label>
+            <input type="checkbox" id="volkswagen" name="volkswagen" value="volkswagen">
+        </div>
+        <div class="checkbox-item">
+            <label for="porsche">Porsche</label>
+            <input type="checkbox" id="porsche" name="porsche" value="porsche">
+        </div>
+        <div class="checkbox-item">
+            <label for="bentley">Bentley</label>
+            <input type="checkbox" id="bentley" name="bentley" value="bentley">
+        </div>
+        <div class="checkbox-item">
+            <label for="lamborghini">Lamborghini</label>
+            <input type="checkbox" id="lamborghini" name="lamborghini" value="lamborghini">
+        </div>
+        <div class="checkbox-item">
+            <label for="skoda">Škoda</label>
+            <input type="checkbox" id="skoda" name="skoda" value="skoda">
+        </div>
+        <div class="checkbox-item">
+            <label for="seat">SEAT</label>
+            <input type="checkbox" id="seat" name="seat" value="seat">
+        </div>
+        <div class="checkbox-item">
+            <label for="cupra">Cupra</label>
+            <input type="checkbox" id="cupra" name="cupra" value="cupra">
+        </div>
+        <div class="checkbox-item">
+            <label for="bugatti">Bugatti</label>
+            <input type="checkbox" id="bugatti" name="bugatti" value="bugatti">
+        </div>
+        <div class="checkbox-item">
+            <label for="jeep">Jeep</label>
+            <input type="checkbox" id="jeep" name="jeep" value="jeep">
+        </div>
+        <div class="checkbox-item">
+            <label for="ram">Ram</label>
+            <input type="checkbox" id="ram" name="ram" value="ram">
+        </div>
+        <div class="checkbox-item">
+            <label for="dodge">Dodge</label>
+            <input type="checkbox" id="dodge" name="dodge" value="dodge">
+        </div>
+        <div class="checkbox-item">
+            <label for="chrysler">Chrysler</label>
+            <input type="checkbox" id="chrysler" name="chrysler" value="chrysler">
+        </div>
+        <div class="checkbox-item">
+            <label for="fiat">Fiat</label>
+            <input type="checkbox" id="fiat" name="fiat" value="fiat">
+        </div>
+        <div class="checkbox-item">
+            <label for="alfa-romeo">Alfa Romeo</label>
+            <input type="checkbox" id="alfa-romeo" name="alfa-romeo" value="alfa-romeo">
+        </div>
+        <div class="checkbox-item">
+            <label for="maserati">Maserati</label>
+            <input type="checkbox" id="maserati" name="maserati" value="maserati">
+        </div>
+        <div class="checkbox-item">
+            <label for="lancia">Lancia</label>
+            <input type="checkbox" id="lancia" name="lancia" value="lancia">
+        </div>
+        <div class="checkbox-item">
+            <label for="abarth">Abarth</label>
+            <input type="checkbox" id="abarth" name="abarth" value="abarth">
+        </div>
+        <div class="checkbox-item">
+            <label for="peugeot">Peugeot</label>
+            <input type="checkbox" id="peugeot" name="peugeot" value="peugeot">
+        </div>
+        <div class="checkbox-item">
+            <label for="citroen">Citroën</label>
+            <input type="checkbox" id="citroen" name="citroen" value="citroen">
+        </div>
+        <div class="checkbox-item">
+            <label for="opel">Opel</label>
+            <input type="checkbox" id="opel" name="opel" value="opel">
+        </div>
+        <div class="checkbox-item">
+            <label for="vauxhall">Vauxhall</label>
+            <input type="checkbox" id="vauxhall" name="vauxhall" value="vauxhall">
+        </div>
+        <div class="checkbox-item">
+            <label for="ds-automobiles">DS Automobiles</label>
+            <input type="checkbox" id="ds-automobiles" name="ds-automobiles" value="ds-automobiles">
+        </div>
+        <div class="checkbox-item">
+            <label for="toyota">Toyota</label>
+            <input type="checkbox" id="toyota" name="toyota" value="toyota">
+        </div>
+        <div class="checkbox-item">
+            <label for="lexus">Lexus</label>
+            <input type="checkbox" id="lexus" name="lexus" value="lexus">
+        </div>
+        <div class="checkbox-item">
+            <label for="daihatsu">Daihatsu</label>
+            <input type="checkbox" id="daihatsu" name="daihatsu" value="daihatsu">
+        </div>
+        <div class="checkbox-item">
+            <label for="hyundai">Hyundai</label>
+            <input type="checkbox" id="hyundai" name="hyundai" value="hyundai">
+        </div>
+        <div class="checkbox-item">
+            <label_for="kia">Kia</label>
+            <input type="checkbox" id="kia" name="kia" value="kia">
+        </div>
+        <div class="checkbox-item">
+            <label for="genesis">Genesis</label>
+            <input type="checkbox" id="genesis" name="genesis" value="genesis">
+        </div>
+        <div class="checkbox-item">
+            <label for="chevrolet">Chevrolet</label>
+            <input type="checkbox" id="chevrolet" name="chevrolet" value="chevrolet">
+        </div>
+        <div class="checkbox-item">
+            <label for="gmc">GMC</label>
+            <input type="checkbox" id="gmc" name="gmc" value="gmc">
+        </div>
+        <div class="checkbox-item">
+            <label for="buick">Buick</label>
+            <input type="checkbox" id="buick" name="buick" value="buick">
+        </div>
+        <div class="checkbox-item">
+            <label for="cadillac">Cadillac</label>
+            <input type="checkbox" id="cadillac" name="cadillac" value="cadillac">
+        </div>
+        <div class="checkbox-item">
+            <label for="nissan">Nissan</label>
+            <input type="checkbox" id="nissan" name="nissan" value="nissan">
+        </div>
+        <div class="checkbox-item">
+            <label for="renault">Renault</label>
+            <input type="checkbox" id="renault" name="renault" value="renault">
+        </div>
+        <div class="checkbox-item">
+            <label for="mitsubishi">Mitsubishi</label>
+            <input type="checkbox" id="mitsubishi" name="mitsubishi" value="mitsubishi">
+        </div>
+        <div class="checkbox-item">
+            <label for="infiniti">Infiniti</label>
+            <input type="checkbox" id="infiniti" name="infiniti" value="infiniti">
+        </div>
+        <div class="checkbox-item">
+            <label for="dacia">Dacia</label>
+            <input type="checkbox" id="dacia" name="dacia" value="dacia">
+        </div>
+        <div class="checkbox-item">
+            <label for="alpine">Alpine</label>
+            <input type="checkbox" id="alpine" name="alpine" value="alpine">
+        </div>
+        <div class="checkbox-item">
+            <label for="ford">Ford</label>
+            <input type="checkbox" id="ford" name="ford" value="ford">
+        </div>
+        <div class="checkbox-item">
+            <label for="lincoln">Lincoln</label>
+            <input type="checkbox" id="lincoln" name="lincoln" value="lincoln">
+        </div>
+        <div class="checkbox-item">
+            <label for="honda">Honda</label>
+            <input type="checkbox" id="honda" name="honda" value="honda">
+        </div>
+        <div class="checkbox-item">
+            <label for="acura">Acura</label>
+            <input type="checkbox" id="acura" name="acura" value="acura">
+        </div>
+        <div class="checkbox-item">
+            <label for="bmw">BMW</label>
+            <input type="checkbox" id="bmw" name="bmw" value="bmw">
+        </div>
+        <div class="checkbox-item">
+            <label for="mini">Mini</label>
+            <input type="checkbox" id="mini" name="mini" value="mini">
+        </div>
+        <div class="checkbox-item">
+            <label for="rolls-royce">Rolls-Royce</label>
+            <input type="checkbox" id="rolls-royce" name="rolls-royce" value="rolls-royce">
+        </div>
+        <div class="checkbox-item">
+            <label for="alpina">Alpina</label>
+            <input type="checkbox" id="alpina" name="alpina" value="alpina">
+        </div>
+        <div class="checkbox-item">
+            <label for="volvo">Volvo</label>
+            <input type="checkbox" id="volvo" name="volvo" value="volvo">
+        </div>
+        <div class="checkbox-item">
+            <label for="polestar">Polestar</label>
+            <input type="checkbox" id="polestar" name="polestar" value="polestar">
+        </div>
+         <div class="checkbox-item">
+            <label for="ineos-automotive">InEOS Automotive</label>
+            <input type="checkbox" id="ineos-automotive" name="ineos-automotive" value="ineos-automotive">
+        </div>
+        <div class="checkbox-item">
+            <label for="baojun">Baojun</label>
+            <input type="checkbox" id="baojun" name="baojun" value="baojun">
+        </div>
+        <br>
+        <br>
+         <div class="cars"> 
+        <div class="brand-section">
+            <div class="brand-title">Jeep</div>
+            <div class="checkbox-item"><label for="jeep-willys">Jeep Willys MB</label><input type="checkbox" id="jeep-willys" name="jeep-willys" value="jeep-willys"></div>
+            <div class="checkbox-item"><label for="jeep-cj">Jeep CJ</label><input type="checkbox" id="jeep-cj" name="jeep-cj" value="jeep-cj"></div>
+            <div class="checkbox-item"><label for="jeep-wrangler">Jeep Wrangler</label><input type="checkbox" id="jeep-wrangler" name="jeep-wrangler" value="jeep-wrangler"></div>
+            <div class="checkbox-item"><label for="jeep-cherokee">Jeep Cherokee</label><input type="checkbox" id="jeep-cherokee" name="jeep-cherokee" value="jeep-cherokee"></div>
+            <div class="checkbox-item"><label for="jeep-grand-cherokee">Jeep Grand Cherokee</label><input type="checkbox" id="jeep-grand-cherokee" name="jeep-grand-cherokee" value="jeep-grand-cherokee"></div>
+            <div class="checkbox-item"><label for="jeep-wagoneer">Jeep Wagoneer</label><input type="checkbox" id="jeep-wagoneer" name="jeep-wagoneer" value="jeep-wagoneer"></div>
+            <div class="checkbox-item"><label for="jeep-grand-wagoneer">Jeep Grand Wagoneer</label><input type="checkbox" id="jeep-grand-wagoneer" name="jeep-grand-wagoneer" value="jeep-grand-wagoneer"></div>
+            <div class="checkbox-item"><label for="jeep-gladiator">Jeep Gladiator</label><input type="checkbox" id="jeep-gladiator" name="jeep-gladiator" value="jeep-gladiator"></div>
+            <div class="checkbox-item"><label for="jeep-compass">Jeep Compass</label><input type="checkbox" id="jeep-compass" name="jeep-compass" value="jeep-compass"></div>
+            <div class="checkbox-item"><label for="jeep-renegade">Jeep Renegade</label><input type="checkbox" id="jeep-renegade" name="jeep-renegade" value="jeep-renegade"></div>
+            <div class="checkbox-item"><label for="jeep-commander">Jeep Commander</label><input type="checkbox" id="jeep-commander" name="jeep-commander" value="jeep-commander"></div>
+            <div class="checkbox-item"><label for="jeep-avenger">Jeep Avenger</label><input type="checkbox" id="jeep-avenger" name="jeep-avenger" value="jeep-avenger"></div>
+            <div class="checkbox-item"><label for="jeep-liberty">Jeep Liberty</label><input type="checkbox" id="jeep-liberty" name="jeep-liberty" value="jeep-liberty"></div>
+            <div class="checkbox-item"><label for="jeep-patriot">Jeep Patriot</label><input type="checkbox" id="jeep-patriot" name="jeep-patriot" value="jeep-patriot"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Ram</div>
+            <div class="checkbox-item"><label for="ram-1500">Ram 1500</label><input type="checkbox" id="ram-1500" name="ram-1500" value="ram-1500"></div>
+            <div class="checkbox-item"><label for="ram-2500">Ram 2500</label><input type="checkbox" id="ram-2500" name="ram-2500" value="ram-2500"></div>
+            <div class="checkbox-item"><label for="ram-3500">Ram 3500</label><input type="checkbox" id="ram-3500" name="ram-3500" value="ram-3500"></div>
+            <div class="checkbox-item"><label for="ram-4500">Ram 4500</label><input type="checkbox" id="ram-4500" name="ram-4500" value="ram-4500"></div>
+            <div class="checkbox-item"><label for="ram-5500">Ram 5500</label><input type="checkbox" id="ram-5500" name="ram-5500" value="ram-5500"></div>
+            <div class="checkbox-item"><label for="ram-promaster">Ram ProMaster</label><input type="checkbox" id="ram-promaster" name="ram-promaster" value="ram-promaster"></div>
+            <div class="checkbox-item"><label for="ram-promaster-city">Ram ProMaster City</label><input type="checkbox" id="ram-promaster-city" name="ram-promaster-city" value="ram-promaster-city"></div>
+            <div class="checkbox-item"><label for="ram-dakota">Ram Dakota</label><input type="checkbox" id="ram-dakota" name="ram-dakota" value="ram-dakota"></div>
+            <div class="checkbox-item"><label for="ram-srt10">Ram SRT-10</label><input type="checkbox" id="ram-srt10" name="ram-srt10" value="ram-srt10"></div>
+            <div class="checkbox-item"><label for="ram-rampage">Ram Rampage</label><input type="checkbox" id="ram-rampage" name="ram-rampage" value="ram-rampage"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Dodge</div>
+            <div class="checkbox-item"><label for="dodge-charger">Dodge Charger</label><input type="checkbox" id="dodge-charger" name="dodge-charger" value="dodge-charger"></div>
+            <div class="checkbox-item"><label for="dodge-challenger">Dodge Challenger</label><input type="checkbox" id="dodge-challenger" name="dodge-challenger" value="dodge-challenger"></div>
+            <div class="checkbox-item"><label for="dodge-viper">Dodge Viper</label><input type="checkbox" id="dodge-viper" name="dodge-viper" value="dodge-viper"></div>
+            <div class="checkbox-item"><label for="dodge-durango">Dodge Durango</label><input type="checkbox" id="dodge-durango" name="dodge-durango" value="dodge-durango"></div>
+            <div class="checkbox-item"><label for="dodge-dart">Dodge Dart</label><input type="checkbox" id="dodge-dart" name="dodge-dart" value="dodge-dart"></div>
+            <div class="checkbox-item"><label for="dodge-neon">Dodge Neon</label><input type="checkbox" id="dodge-neon" name="dodge-neon" value="dodge-neon"></div>
+            <div class="checkbox-item"><label for="dodge-stratus">Dodge Stratus</label><input type="checkbox" id="dodge-stratus" name="dodge-stratus" value="dodge-stratus"></div>
+            <div class="checkbox-item"><label for="dodge-avenger">Dodge Avenger</label><input type="checkbox" id="dodge-avenger" name="dodge-avenger" value="dodge-avenger"></div>
+            <div class="checkbox-item"><label for="dodge-magnum">Dodge Magnum</label><input type="checkbox" id="dodge-magnum" name="dodge-magnum" value="dodge-magnum"></div>
+            <div class="checkbox-item"><label for="dodge-journey">Dodge Journey</label><input type="checkbox" id="dodge-journey" name="dodge-journey" value="dodge-journey"></div>
+            <div class="checkbox-item"><label for="dodge-caravan">Dodge Caravan</label><input type="checkbox" id="dodge-caravan" name="dodge-caravan" value="dodge-caravan"></div>
+            <div class="checkbox-item"><label for="dodge-grand-caravan">Dodge Grand Caravan</label><input type="checkbox" id="dodge-grand-caravan" name="dodge-grand-caravan" value="dodge-grand-caravan"></div>
+            <div class="checkbox-item"><label for="dodge-intrepid">Dodge Intrepid</label><input type="checkbox" id="dodge-intrepid" name="dodge-intrepid" value="dodge-intrepid"></div>
+            <div class="checkbox-item"><label for="dodge-stealth">Dodge Stealth</label><input type="checkbox" id="dodge-stealth" name="dodge-stealth" value="dodge-stealth"></div>
+            <div class="checkbox-item"><label for="dodge-spirit">Dodge Spirit</label><input type="checkbox" id="dodge-spirit" name="dodge-spirit" value="dodge-spirit"></div>
+            <div class="checkbox-item"><label for="dodge-shadow">Dodge Shadow</label><input type="checkbox" id="dodge-shadow" name="dodge-shadow" value="dodge-shadow"></div>
+            <div class="checkbox-item"><label for="dodge-daytona">Dodge Daytona</label><input type="checkbox" id="dodge-daytona" name="dodge-daytona" value="dodge-daytona"></div>
+            <div class="checkbox-item"><label revisit-for="dodge-omni"><label for="dodge-omni">Dodge Omni</label><input type="checkbox" id="dodge-omni" name="dodge-omni" value="dodge-omni"></div>
+            <div class="checkbox-item"><label for="dodge-ramcharger">Dodge Ramcharger</label><input type="checkbox" id="dodge-ramcharger" name="dodge-ramcharger" value="dodge-ramcharger"></div>
+            <div class="checkbox-item"><label for="dodge-hornet">Dodge Hornet</label><input type="checkbox" id="dodge-hornet" name="dodge-hornet" value="dodge-hornet"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Chrysler</div>
+            <div class="checkbox-item"><label for="chrysler-300">Chrysler 300</label><input type="checkbox" id="chrysler-300" name="chrysler-300" value="chrysler-300"></div>
+            <div class="checkbox-item"><label for="chrysler-pacifica">Chrysler Pacifica</label><input type="checkbox" id="chrysler-pacifica" name="chrysler-pacifica" value="chrysler-pacifica"></div>
+            <div class="checkbox-item"><label for="chrysler-voyager">Chrysler Voyager</label><input type="checkbox" id="chrysler-voyager" name="chrysler-voyager" value="chrysler-voyager"></div>
+            <div class="checkbox-item"><label for="chrysler-town-country">Chrysler Town & Country</label><input type="checkbox" id="chrysler-town-country" name="chrysler-town-country" value="chrysler-town-country"></div>
+            <div class="checkbox-item"><label for="chrysler-pt-cruiser">Chrysler PT Cruiser</label><input type="checkbox" id="chrysler-pt-cruiser" name="chrysler-pt-cruiser" value="chrysler-pt-cruiser"></div>
+            <div class="checkbox-item"><label for="chrysler-sebring">Chrysler Sebring</label><input type="checkbox" id="chrysler-sebring" name="chrysler-sebring" value="chrysler-sebring"></div>
+            <div class="checkbox-item"><label for="chrysler-crossfire">Chrysler Crossfire</label><input type="checkbox" id="chrysler-crossfire" name="chrysler-crossfire" value="chrysler-crossfire"></div>
+            <div class="checkbox-item"><label for="chrysler-concorde">Chrysler Concorde</label><input type="checkbox" id="chrysler-concorde" name="chrysler-concorde" value="chrysler-concorde"></div>
+            <div class="checkbox-item"><label for="chrysler-lhs">Chrysler LHS</label><input type="checkbox" id="chrysler-lhs" name="chrysler-lhs" value="chrysler-lhs"></div>
+        <div class="brand-section">
+            <div class="brand-title">Škoda</div>
+            <div class="checkbox-item"><label for="skoda-octavia">Škoda Octavia</label><input type="checkbox" id="skoda-octavia" name="skoda-octavia" value="skoda-octavia"></div>
+            <div class="checkbox-item"><label for="skoda-superb">Škoda Superb</label><input type="checkbox" id="skoda-superb" name="skoda-superb" value="skoda-superb"></div>
+            <div class="checkbox-item"><label for="skoda-fabia">Škoda Fabia</label><input type="checkbox" id="skoda-fabia" name="skoda-fabia" value="skoda-fabia"></div>
+            <div class="checkbox-item"><label for="skoda-kodiaq">Škoda Kodiaq</label><input type="checkbox" id="skoda-kodiaq" name="skoda-kodiaq" value="skoda-kodiaq"></div>
+            <div class="checkbox-item"><label for="skoda-karoq">Škoda Karoq</label><input type="checkbox" id="skoda-karoq" name="skoda-karoq" value="skoda-karoq"></div>
+            <div class="checkbox-item"><label for="skoda-kamiq">Škoda Kamiq</label><input type="checkbox" id="skoda-kamiq" name="skoda-kamiq" value="skoda-kamiq"></div>
+            <div class="checkbox-item"><label for="skoda-enyaq">Škoda Enyaq</label><input type="checkbox" id="skoda-enyaq" name="skoda-enyaq" value="skoda-enyaq"></div>
+            <div class="checkbox-item"><label for="skoda-scala">Škoda Scala</label><input type="checkbox" id="skoda-scala" name="skoda-scala" value="skoda-scala"></div>
+            <div class="checkbox-item"><label for="skoda-rapid">Škoda Rapid</label><input type="checkbox" id="skoda-rapid" name="skoda-rapid" value="skoda-rapid"></div>
+            <div class="checkbox-item"><label for="skoda-yeti">Škoda Yeti</label><input type="checkbox" id="skoda-yeti" name="skoda-yeti" value="skoda-yeti"></div>
+            <div class="checkbox-item"><label for="skoda-roomster">Škoda Roomster</label><input type="checkbox" id="skoda-roomster" name="skoda-roomster" value="skoda-roomster"></div>
+            <div class="checkbox-item"><label for="skoda-citigo">Škoda Citigo</label><input type="checkbox" id="skoda-citigo" name="skoda-citigo" value="skoda-citigo"></div>
+            <div class="checkbox-item"><label for="skoda-felicia">Škoda Felicia</label><input type="checkbox" id="skoda-felicia" name="skoda-felicia" value="skoda-felicia"></div>
+            <div class="checkbox-item"><label for="skoda-favorit">Škoda Favorit</label><input type="checkbox" id="skoda-favorit" name="skoda-favorit" value="skoda-favorit"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">SEAT</div>
+            <div class="checkbox-item"><label for="seat-ibiza">SEAT Ibiza</label><input type="checkbox" id="seat-ibiza" name="seat-ibiza" value="seat-ibiza"></div>
+            <div class="checkbox-item"><label for="seat-leon">SEAT León</label><input type="checkbox" id="seat-leon" name="seat-leon" value="seat-leon"></div>
+            <div class="checkbox-item"><label for="seat-ateca">SEAT Ateca</label><input type="checkbox" id="seat-ateca" name="seat-ateca" value="seat-ateca"></div>
+            <div class="checkbox-item"><label for="seat-arona">SEAT Arona</label><input type="checkbox" id="seat-arona" name="seat-arona" value="seat-arona"></div>
+            <div class="checkbox-item"><label for="seat-tarraco">SEAT Tarraco</label><input type="checkbox" id="seat-tarraco" name="seat-tarraco" value="seat-tarraco"></div>
+            <div class="checkbox-item"><label for="seat-alhambra">SEAT Alhambra</label><input type="checkbox" id="seat-alhambra" name="seat-alhambra" value="seat-alhambra"></div>
+            <div class="checkbox-item"><label for="seat-toledo">SEAT Toledo</label><input type="checkbox" id="seat-toledo" name="seat-toledo" value="seat-toledo"></div>
+            <div class="checkbox-item"><label for="seat-altea">SEAT Altea</label><input type="checkbox" id="seat-altea" name="seat-altea" value="seat-altea"></div>
+            <div class="checkbox-item"><label for="seat-cordoba">SEAT Cordoba</label><input type="checkbox" id="seat-cordoba" name="seat-cordoba" value="seat-cordoba"></div>
+            <div class="checkbox-item"><label for="seat-arosa">SEAT Arosa</label><input type="checkbox" id="seat-arosa" name="seat-arosa" value="seat-arosa"></div>
+            <div class="checkbox-item"><label for="seat-mii">SEAT Mii</label><input type="checkbox" id="seat-mii" name="seat-mii" value="seat-mii"></div>
+            <div class="checkbox-item"><label for="seat-exeo">SEAT Exeo</label><input type="checkbox" id="seat-exeo" name="seat-exeo" value="seat-exeo"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Cupra</div>
+            <div class="checkbox-item"><label for="cupra-formentor">Cupra Formentor</label><input type="checkbox" id="cupra-formentor" name="cupra-formentor" value="cupra-formentor"></div>
+            <div class="checkbox-item"><label for="cupra-born">Cupra Born</label><input type="checkbox" id="cupra-born" name="cupra-born" value="cupra-born"></div>
+            <div class="checkbox-item"><label for="cupra-tavascan">Cupra Tavascan</label><input type="checkbox" id="cupra-tavascan" name="cupra-tavascan" value="cupra-tavascan"></div>
+            <div class="checkbox-item"><label for="cupra-terramar">Cupra Terramar</label><input type="checkbox" id="cupra-terramar" name="cupra-terramar" value="cupra-terramar"></div>
+            <div class="checkbox-item"><label for="cupra-leon">Cupra Leon</label><input type="checkbox" id="cupra-leon" name="cupra-leon" value="cupra-leon"></div>
+            <div class="checkbox-item"><label for="cupra-ateca">Cupra Ateca</label><input type="checkbox" id="cupra-ateca" name="cupra-ateca" value="cupra-ateca"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Bugatti</div>
+            <div class="checkbox-item"><label for="bugatti-eb110">Bugatti EB110</label><input type="checkbox" id="bugatti-eb110" name="bugatti-eb110" value="bugatti-eb110"></div>
+            <div class="checkbox-item"><label for="bugatti-veyron">Bugatti Veyron</label><input type="checkbox" id="bugatti-veyron" name="bugatti-veyron" value="bugatti-veyron"></div>
+            <div class="checkbox-item"><label for="bugatti-chiron">Bugatti Chiron</label><input type="checkbox" id="bugatti-chiron" name="bugatti-chiron" value="bugatti-chiron"></div>
+            <div class="checkbox-item"><label for="bugatti-divo">Bugatti Divo</label><input type="checkbox" id="bugatti-divo" name="bugatti-divo" value="bugatti-divo"></div>
+            <div class="checkbox-item"><label for="bugatti-centodieci">Bugatti Centodieci</label><input type="checkbox" id="bugatti-centodieci" name="bugatti-centodieci" value="bugatti-centodieci"></div>
+            <div class="checkbox-item"><label for="bugatti-bolide">Bugatti Bolide</label><input type="checkbox" id="bugatti-bolide" name="bugatti-bolide" value="bugatti-bolide"></div>
+            <div class="checkbox-item"><label for="bugatti-mistral">Bugatti W16 Mistral</label><input type="checkbox" id="bugatti-mistral" name="bugatti-mistral" value="bugatti-mistral"></div>
+            <div class="checkbox-item"><label for="bugatti-tourbillon">Bugatti Tourbillon</label><input type="checkbox" id="bugatti-tourbillon" name="bugatti-tourbillon" value="bugatti-tourbillon"></div>
+        </div>
+        <div class="brand-section">
+            <div class="brand-title">Audi</div>
+            <div class="checkbox-item"><label for="audi-a1">Audi A1</label><input type="checkbox" id="audi-a1" name="audi-a1" value="audi-a1"></div>
+            <div class="checkbox-item"><label for="audi-a2">Audi A2</label><input type="checkbox" id="audi-a2" name="audi-a2" value="audi-a2"></div>
+            <div class="checkbox-item"><label for="audi-a3">Audi A3</label><input type="checkbox" id="audi-a3" name="audi-a3" value="audi-a3"></div>
+            <div class="checkbox-item"><label for="audi-a4">Audi A4</label><input type="checkbox" id="audi-a4" name="audi-a4" value="audi-a4"></div>
+            <div class="checkbox-item"><label for="audi-a5">Audi A5</label><input type="checkbox" id="audi-a5" name="audi-a5" value="audi-a5"></div>
+            <div class="checkbox-item"><label for="audi-a6">Audi A6</label><input type="checkbox" id="audi-a6" name="audi-a6" value="audi-a6"></div>
+            <div class="checkbox-item"><label for="audi-a7">Audi A7</label><input type="checkbox" id="audi-a7" name="audi-a7" value="audi-a7"></div>
+            <div class="checkbox-item"><label for="audi-a8">Audi A8</label><input type="checkbox" id="audi-a8" name="audi-a8" value="audi-a8"></div>
+            <div class="checkbox-item"><label for="audi-q2">Audi Q2</label><input type="checkbox" id="audi-q2" name="audi-q2" value="audi-q2"></div>
+            <div class="checkbox-item"><label for="audi-q3">Audi Q3</label><input type="checkbox" id="audi-q3" name="audi-q3" value="audi-q3"></div>
+            <div class="checkbox-item"><label for="audi-q4-e-tron">Audi Q4 e-tron</label><input type="checkbox" id="audi-q4-e-tron" name="audi-q4-e-tron" value="audi-q4-e-tron"></div>
+            <div class="checkbox-item"><label for="audi-q5">Audi Q5</label><input type="checkbox" id="audi-q5" name="audi-q5" value="audi-q5"></div>
+            <div class="checkbox-item"><label for="audi-q6-e-tron">Audi Q6 e-tron</label><input type="checkbox" id="audi-q6-e-tron" name="audi-q6-e-tron" value="audi-q6-e-tron"></div>
+            <div class="checkbox-item"><label for="audi-q7">Audi Q7</label><input type="checkbox" id="audi-q7" name="audi-q7" value="audi-q7"></div>
+            <div class="checkbox-item"><label for="audi-q8">Audi Q8</label><input type="checkbox" id="audi-q8" name="audi-q8" value="audi-q8"></div>
+            <div class="checkbox-item"><label for="audi-e-tron-gt">Audi e-tron GT</label><input type="checkbox" id="audi-e-tron-gt" name="audi-e-tron-gt" value="audi-e-tron-gt"></div>
+            <div class="checkbox-item"><label for="audi-tt">Audi TT</label><input type="checkbox" id="audi-tt" name="audi-tt" value="audi-tt"></div>
+            <div class="checkbox-item"><label for="audi-r8">Audi R8</label><input type="checkbox" id="audi-r8" name="audi-r8" value="audi-r8"></div>
+            <div class="checkbox-item"><label for="audi-quattro">Audi Quattro</label><input type="checkbox" id="audi-quattro" name="audi-quattro" value="audi-quattro"></div>
+            <div class="checkbox-item"><label for="audi-cabriolet">Audi Cabriolet</label><input type="checkbox" id="audi-cabriolet" name="audi-cabriolet" value="audi-cabriolet"></div>
+            <div class="checkbox-item"><label for="audi-80">Audi 80</label><input type="checkbox" id="audi-80" name="audi-80" value="audi-80"></div>
+            <div class="checkbox-item"><label for="audi-90">Audi 90</label><input type="checkbox" id="audi-90" name="audi-90" value="audi-90"></div>
+            <div class="checkbox-item"><label for="audi-100">Audi 100</label><input type="checkbox" id="audi-100" name="audi-100" value="audi-100"></div>
+            <div class="checkbox-item"><label for="audi-200">Audi 200</label><input type="checkbox" id="audi-200" name="audi-200" value="audi-200"></div>
+            <div class="checkbox-item"><label for="audi-50">Audi 50</label><input type="checkbox" id="audi-50" name="audi-50" value="audi-50"></div>
+            <div class="checkbox-item"><label for="audi-v8">Audi V8</label><input type="checkbox" id="audi-v8" name="audi-v8" value="audi-v8"></div>
+            <div class="checkbox-item"><label for="audi-rs3">Audi RS3</label><input type="checkbox" id="audi-rs3" name="audi-rs3" value="audi-rs3"></div>
+            <div class="checkbox-item"><label for="audi-rs4">Audi RS4</label><input type="checkbox" id="audi-rs4" name="audi-rs4" value="audi-rs4"></div>
+            <div class="checkbox-item"><label for="audi-rs5">Audi RS5</label><input type="checkbox" id="audi-rs5" name="audi-rs5" value="audi-rs5"></div>
+            <div class="checkbox-item"><label for="audi-rs6">Audi RS6</label><input type="checkbox" id="audi-rs6" name="audi-rs6" value="audi-rs6"></div>
+            <div class="checkbox-item"><label for="audi-rs7">Audi RS7</label><input type="checkbox" id="audi-rs7" name="audi-rs7" value="audi-rs7"></div>
+            <div class="checkbox-item"><label for="audi-s3">Audi S3</label><input type="checkbox" id="audi-s3" name="audi-s3" value="audi-s3"></div>
+            <div class="checkbox-item"><label for="audi-s4">Audi S4</label><input type="checkbox" id="audi-s4" name="audi-s4" value="audi-s4"></div>
+            <div class="checkbox-item"><label for="audi-s5">Audi S5</label><input type="checkbox" id="audi-s5" name="audi-s5" value="audi-s5"></div>
+            <div class="checkbox-item"><label for="audi-s6">Audi S6</label><input type="checkbox" id="audi-s6" name="audi-s6" value="audi-s6"></div>
+            <div class="checkbox-item"><label for="audi-s7">Audi S7</label><input type="checkbox" id="audi-s7" name="audi-s7" value="audi-s7"></div>
+            <div class="checkbox-item"><label for="audi-s8">Audi S8</label><input type="checkbox" id="audi-s8" name="audi-s8" value="audi-s8"></div>
+            <div class="checkbox-item"><label for="audi-sq2">Audi SQ2</label><input type="checkbox" id="audi-sq2" name="audi-sq2" value="audi-sq2"></div>
+            <div class="checkbox-item"><label for="audi-sq5">Audi SQ5</label><input type="checkbox" id="audi-sq5" name="audi-sq5" value="audi-sq5"></div>
+            <div class="checkbox-item"><label for="audi-sq7">Audi SQ7</label><input type="checkbox" id="audi-sq7" name="audi-sq7" value="audi-sq7"></div>
+            <div class="checkbox-item"><label for="audi-sq8">Audi SQ8</label><input type="checkbox" id="audi-sq8" name="audi-sq8" value="audi-sq8"></div>
+        </div>
+         <div class="checkbox-item"><label for="vw-scirocco">Volkswagen Scirocco</label><input type="checkbox" id="vw-scirocco" name="vw-scirocco" value="vw-scirocco"></div>
+            <div class="checkbox-item"><label for="vw-corrado">Volkswagen Corrado</label><input type="checkbox" id="vw-corrado" name="vw-corrado" value="vw-corrado"></div>
+            <div class="checkbox-item"><label for="vw-phaeton">Volkswagen Phaeton</label><input type="checkbox" id="vw-phaeton" name="vw-phaeton" value="vw-phaeton"></div>
+            <div class="checkbox-item"><label for="vw-sharan">Volkswagen Sharan</label><input type="checkbox" id="vw-sharan" name="vw-sharan" value="vw-sharan"></div>
+            <div class="checkbox-item"><label for="vw-touran">Volkswagen Touran</label><input type="checkbox" id="vw-touran" name="vw-touran" value="vw-touran"></div>
+            <div class="checkbox-item"><label for="vw-up">Volkswagen Up!</label><input type="checkbox" id="vw-up" name="vw-up" value="vw-up"></div>
+            <div class="checkbox-item"><label for="vw-lupo">Volkswagen Lupo</label><input type="checkbox" id="vw-lupo" name="vw-lupo" value="vw-lupo"></div>
+            <div class="checkbox-item"><label for="vw-fox">Volkswagen Fox</label><input type="checkbox" id="vw-fox" name="vw-fox" value="vw-fox"></div>
+            <div class="checkbox-item"><label for="vw-amarok">Volkswagen Amarok</label><input type="checkbox" id="vw-amarok" name="vw-amarok" value="vw-amarok"></div>
+            <div class="checkbox-item"><label for="vw-id3">Volkswagen ID.3</label><input type="checkbox" id="vw-id3" name="vw-id3" value="vw-id3"></div>
+            <div class="checkbox-item"><label for="vw-id4">Volkswagen ID.4</label><input type="checkbox" id="vw-id4" name="vw-id4" value="vw-id4"></div>
+            <div class="checkbox-item"><label for="vw-id5">Volkswagen ID.5</label><input type="checkbox" id="vw-id5" name="vw-id5" value="vw-id5"></div>
+            <div class="checkbox-item"><label for="vw-id6">Volkswagen ID.6</label><input type="checkbox" id="vw-id6" name="vw-id6" value="vw-id6"></div>
+            <div class="checkbox-item"><label for="vw-id7">Volkswagen ID.7</label><input type="checkbox" id="vw-id7" name="vw-id7" value="vw-id7"></div>
+            <div class="checkbox-item"><label for="vw-idbuzz">Volkswagen ID.Buzz</label><input type="checkbox" id="vw-idbuzz" name="vw-idbuzz" value="vw-idbuzz"></div>
+            <div class="checkbox-item"><label for="vw-caddy">Volkswagen Caddy</label><input type="checkbox" id="vw-caddy" name="vw-caddy" value="vw-caddy"></div>
+            <div class="checkbox-item"><label for="vw-transporter">Volkswagen Transporter</label><input type="checkbox" id="vw-transporter" name="vw-transporter" value="vw-transporter"></div>
+            <div class="checkbox-item"><label for="vw-cc">Volkswagen CC</label><input type="checkbox" id="vw-cc" name="vw-cc" value="vw-cc"></div>
+            <div class="checkbox-item"><label for="vw-eos">Volkswagen Eos</label><input type="checkbox" id="vw-eos" name="vw-eos" value="vw-eos"></div>
+            <div class="checkbox-item"><label for="vw-bora">Volkswagen Bora</label><input type="checkbox" id="vw-bora" name="vw-bora" value="vw-bora"></div>
+            <div class="checkbox-item"><label for="vw-vento">Volkswagen Vento</label><input type="checkbox" id="vw-vento" name="vw-vento" value="vw-vento"></div>
+            <div class="checkbox-item"><label for="vw-santana">Volkswagen Santana</label><input type="checkbox" id="vw-santana" name="vw-santana" value="vw-santana"></div>
+            <div class="checkbox-item"><label for="vw-taigo">Volkswagen Taigo</label><input type="checkbox" id="vw-taigo" name="vw-taigo" value="vw-taigo"></div>
+            <div class="checkbox-item"><label for="vw-atlas">Volkswagen Atlas</label><input type="checkbox" id="vw-atlas" name="vw-atlas" value="vw-atlas"></div>
+            <div class="checkbox-item"><label for="vw-teramont">Volkswagen Teramont</label><input type="checkbox" id="vw-teramont" name="vw-teramont" value="vw-teramont"></div>
+            <div class="checkbox-item"><label for="vw-routan">Volkswagen Routan</label><input type="checkbox" id="vw-routan" name="vw-routan" value="vw-routan"></div>
+        </div>
+               <div class="brand-section">
+            <div class="brand-title">Porsche</div>
+            <div class="checkbox-item"><label for="porsche-356">Porsche 356</label><input type="checkbox" id="porsche-356" name="porsche-356" value="porsche-356"></div>
+            <div class="checkbox-item"><label for="porsche-550">Porsche 550 Spyder</label><input type="checkbox" id="porsche-550" name="porsche-550" value="porsche-550"></div>
+            <div class="checkbox-item"><label for="porsche-911">Porsche 911</label><input type="checkbox" id="porsche-911" name="porsche-911" value="porsche-911"></div>
+            <div class="checkbox-item"><label for="porsche-912">Porsche 912</label><input type="checkbox" id="porsche-912" name="porsche-912" value="porsche-912"></div>
+            <div class="checkbox-item"><label for="porsche-914">Porsche 914</label><input type="checkbox" id="porsche-914" name="porsche-914" value="porsche-914"></div>
+            <div class="checkbox-item"><label for="porsche-924">Porsche 924</label><input type="checkbox" id="porsche-924" name="porsche-924" value="porsche-924"></div>
+            <div class="checkbox-item"><label for="porsche-928">Porsche 928</label><input type="checkbox" id="porsche-928" name="porsche-928" value="porsche-928"></div>
+            <div class="checkbox-item"><label for="porsche-944">Porsche 944</label><input type="checkbox" id="porsche-944" name="porsche-944" value="porsche-944"></div>
+            <div class="checkbox-item"><label for="porsche-959">Porsche 959</label><input type="checkbox" id="porsche-959" name="porsche-959" value="porsche-959"></div>
+            <div class="checkbox-item"><label for="porsche-968">Porsche 968</label><input type="checkbox" id="porsche-968" name="porsche-968" value="porsche-968"></div>
+            <div class="checkbox-item"><label for="porsche-boxster">Porsche Boxster</label><input type="checkbox" id="porsche-boxster" name="porsche-boxster" value="porsche-boxster"></div>
+            <div class="checkbox-item"><label for="porsche-cayman">Porsche Cayman</label><input type="checkbox" id="porsche-cayman" name="porsche-cayman" value="porsche-cayman"></div>
+            <div class="checkbox-item"><label for="porsche-cayenne">Porsche Cayenne</label><input type="checkbox" id="porsche-cayenne" name="porsche-cayenne" value="porsche-cayenne"></div>
+            <div class="checkbox-item"><label for="porsche-macan">Porsche Macan</label><input type="checkbox" id="porsche-macan" name="porsche-macan" value="porsche-macan"></div>
+            <div class="checkbox-item"><label for="porsche-panamera">Porsche Panamera</label><input type="checkbox" id="porsche-panamera" name="porsche-panamera" value="porsche-panamera"></div>
+            <div class="checkbox-item"><label for="porsche-taycan">Porsche Taycan</label><input type="checkbox" id="porsche-taycan" name="porsche-taycan" value="porsche-taycan"></div>
+            <div class="checkbox-item"><label for="porsche-cgt">Porsche Carrera GT</label><input type="checkbox" id="porsche-cgt" name="porsche-cgt" value="porsche-cgt"></div>
+            <div class="checkbox-item"><label for="porsche-918">Porsche 918 Spyder</label><input type="checkbox" id="porsche-918" name="porsche-918" value="porsche-918"></div>
+            <div class="checkbox-item"><label for="porsche-930">Porsche 930</label><input type="checkbox" id="porsche-930" name="porsche-930" value="porsche-930"></div>
+            <div class="checkbox-item"><label for="porsche-964">Porsche 964</label><input type="checkbox" id="porsche-964" name="porsche-964" value="porsche-964"></div>
+            <div class="checkbox-item"><label for="porsche-993">Porsche 993</label><input type="checkbox" id="porsche-993" name="porsche-993" value="porsche-993"></div>
+            <div class="checkbox-item"><label for="porsche-996">Porsche 996</label><input type="checkbox" id="porsche-996" name="porsche-996" value="porsche-996"></div>
+            <div class="checkbox-item"><label for="porsche-997">Porsche 997</label><input type="checkbox" id="porsche-997" name="porsche-997" value="porsche-997"></div>
+            <div class="checkbox-item"><label for="porsche-991">Porsche 991</label><input type="checkbox" id="porsche-991" name="porsche-991" value="porsche-991"></div>
+            <div class="checkbox-item"><label for="porsche-992">Porsche 992</label><input type="checkbox" id="porsche-992" name="porsche-992" value="porsche-992"></div>
+        </div>
+                <div class="brand-section">
+            <div class="brand-title">Mercedes-Benz</div>
+            <div class="checkbox-item"><label for="mb-patent">Benz Patent-Motorwagen</label><input type="checkbox" id="mb-patent" name="mb-patent" value="mb-patent"></div>
+            <div class="checkbox-item"><label for="mb-daimler">Daimler Motorized Carriage</label><input type="checkbox" id="mb-daimler" name="mb-daimler" value="mb-daimler"></div>
+            <div class="checkbox-item"><label for="mb-35hp">Mercedes 35 hp</label><input type="checkbox" id="mb-35hp" name="mb-35hp" value="mb-35hp"></div>
+            <div class="checkbox-item"><label for="mb-simplex">Mercedes Simplex</label><input type="checkbox" id="mb-simplex" name="mb-simplex" value="mb-simplex"></div>
+            <div class="checkbox-item"><label for="mb-velo">Benz Velo</label><input type="checkbox" id="mb-velo" name="mb-velo" value="mb-velo"></div>
+            <div class="checkbox-item"><label for="mb-victoria">Benz Victoria</label><input type="checkbox" id="mb-victoria" name="mb-victoria" value="mb-victoria"></div>
+            <div class="checkbox-item"><label for="mb-blitzen">Blitzen Benz</label><input type="checkbox" id="mb-blitzen" name="mb-blitzen" value="mb-blitzen"></div>
+            <div class="checkbox-item"><label for="mb-knight">Mercedes Knight</label><input type="checkbox" id="mb-knight" name="mb-knight" value="mb-knight"></div>
+            <div class="checkbox-item"><label for="mb-typ400">Mercedes-Benz Typ 400</label><input type="checkbox" id="mb-typ400" name="mb-typ400" value="mb-typ400"></div>
+            <div class="checkbox-item"><label for="mb-typ630">Mercedes-Benz Typ 630</label><input type="checkbox" id="mb-typ630" name="mb-typ630" value="mb-typ630"></div>
+            <div class="checkbox-item"><label for="mb-w02">Mercedes-Benz W02</label><input type="checkbox" id="mb-w02" name="mb-w02" value="mb-w02"></div>
+            <div class="checkbox-item"><label for="mb-w06">Mercedes-Benz W06</label><input type="checkbox" id="mb-w06" name="mb-w06" value="mb-w06"></div>
+            <div class="checkbox-item"><label for="mb-w07">Mercedes-Benz W07</label><input type="checkbox" id="mb-w07" name="mb-w07" value="mb-w07"></div>
+            <div class="checkbox-item"><label for="mb-w18">Mercedes-Benz W18</label><input type="checkbox" id="mb-w18" name="mb-w18" value="mb-w18"></div>
+            <div class="checkbox-item"><label for="mb-w19">Mercedes-Benz W19</label><input type="checkbox" id="mb-w19" name="mb-w19" value="mb-w19"></div>
+            <div class="checkbox-item"><label for="mb-w21">Mercedes-Benz W21</label><input type="checkbox" id="mb-w21" name="mb-w21" value="mb-w21"></div>
+            <div class="checkbox-item"><label for="mb-w22">Mercedes-Benz W22</label><input type="checkbox" id="mb-w22" name="mb-w22" value="mb-w22"></div>
+            <div class="checkbox-item"><label for="mb-w23">Mercedes-Benz W23</label><input type="checkbox" id="mb-w23" name="mb-w23" value="mb-w23"></div>
+            <div class="checkbox-item"><label for="mb-w28">Mercedes-Benz W28</label><input type="checkbox" id="mb-w28" name="mb-w28" value="mb-w28"></div>
+            <div class="checkbox-item"><label for="mb-w29">Mercedes-Benz W29</label><input type="checkbox" id="mb-w29" name="mb-w29" value="mb-w29"></div>
+            <div class="checkbox-item"><label for="mb-w31">Mercedes-Benz W31</label><input type="checkbox" id="mb-w31" name="mb-w31" value="mb-w31"></div>
+            <div class="checkbox-item"><label for="mb-w136">Mercedes-Benz W136</label><input type="checkbox" id="mb-w136" name="mb-w136" value="mb-w136"></div>
+            <div class="checkbox-item"><label for="mb-w138">Mercedes-Benz W138</label><input type="checkbox" id="mb-w138" name="mb-w138" value="mb-w138"></div>
+            <div class="checkbox-item"><label for="mb-w142">Mercedes-Benz W142</label><input type="checkbox" id="mb-w142" name="mb-w142" value="mb-w142"></div>
+            <div class="checkbox-item"><label for="mb-w143">Mercedes-Benz W143</label><input type="checkbox" id="mb-w143" name="mb-w143" value="mb-w143"></div>
+            <div class="checkbox-item"><label for="mb-w150">Mercedes-Benz W150</label><input type="checkbox" id="mb-w150" name="mb-w150" value="mb-w150"></div>
+            <div class="checkbox-item"><label for="mb-w153">Mercedes-Benz W153</label><input type="checkbox" id="mb-w153" name="mb-w153" value="mb-w153"></div>
+            <div class="checkbox-item"><label for="mb-w120">Mercedes-Benz W120</label><input type="checkbox" id="mb-w120" name="mb-w120" value="mb-w120"></div>
+            <div class="checkbox-item"><label for="mb-w121">Mercedes-Benz W121</label><input type="checkbox" id="mb-w121" name="mb-w121" value="mb-w121"></div>
+            <div class="checkbox-item"><label for="mb-w121b">Mercedes-Benz W121 BII</label><input type="checkbox" id="mb-w121b" name="mb-w121b" value="mb-w121b"></div>
+            <div class="checkbox-item"><label for="mb-w128">Mercedes-Benz W128</label><input type="checkbox" id="mb-w128" name="mb-w128" value="mb-w128"></div>
+            <div class="checkbox-item"><label for="mb-w180">Mercedes-Benz W180</label><input type="checkbox" id="mb-w180" name="mb-w180" value="mb-w180"></div>
+            <div class="checkbox-item"><label for="mb-w186">Mercedes-Benz W186</label><input type="checkbox" id="mb-w186" name="mb-w186" value="mb-w186"></div>
+            <div class="checkbox-item"><label for="mb-w187">Mercedes-Benz W187</label><input type="checkbox" id="mb-w187" name="mb-w187" value="mb-w187"></div>
+            <div class="checkbox-item"><label for="mb-w188">Mercedes-Benz W188</label><input type="checkbox" id="mb-w188" name="mb-w188" value="mb-w188"></div>
+            <div class="checkbox-item"><label for="mb-w189">Mercedes-Benz W189</label><input type="checkbox" id="mb-w189" name="mb-w189" value="mb-w189"></div>
+            <div class="checkbox-item"><label for="mb-w191">Mercedes-Benz W191</label><input type="checkbox" id="mb-w191" name="mb-w191" value="mb-w191"></div>
+            <div class="checkbox-item"><label for="mb-w198">Mercedes-Benz W198</label><input type="checkbox" id="mb-w198" name="mb-w198" value="mb-w198"></div>
+            <div class="checkbox-item"><label for="mb-w110">Mercedes-Benz W110</label><input type="checkbox" id="mb-w110" name="mb-w110" value="mb-w110"></div>
+            <div class="checkbox-item"><label for="mb-w111">Mercedes-Benz W111</label><input type="checkbox" id="mb-w111" name="mb-w111" value="mb-w111"></div>
+            <div class="checkbox-item"><label for="mb-w112">Mercedes-Benz W112</label><input type="checkbox" id="mb-w112" name="mb-w112" value="mb-w112"></div>
+            <div class="checkbox-item"><label for="mb-w100">Mercedes-Benz W100</label><input type="checkbox" id="mb-w100" name="mb-w100" value="mb-w100"></div>
+            <div class="checkbox-item"><label for="mb-w108">Mercedes-Benz W108</label><input type="checkbox" id="mb-w108" name="mb-w108" value="mb-w108"></div>
+            <div class="checkbox-item"><label for="mb-w109">Mercedes-Benz W109</label><input type="checkbox" id="mb-w109" name="mb-w109" value="mb-w109"></div>
+            <div class="checkbox-item"><label for="mb-w113">Mercedes-Benz W113</label><input type="checkbox" id="mb-w113" name="mb-w113" value="mb-w113"></div>
+            <div class="checkbox-item"><label for="mb-w114">Mercedes-Benz W114</label><input type="checkbox" id="mb-w114" name="mb-w114" value="mb-w114"></div>
+            <div class="checkbox-item"><label for="mb-w115">Mercedes-Benz W115</label><input type="checkbox" id="mb-w115" name="mb-w115" value="mb-w115"></div>
+            <div class="checkbox-item"><label for="mb-w123">Mercedes-Benz W123</label><input type="checkbox" id="mb-w123" name="mb-w123" value="mb-w123"></div>
+            <div class="checkbox-item"><label for="mb-c123">Mercedes-Benz C123</label><input type="checkbox" id="mb-c123" name="mb-c123" value="mb-c123"></div>
+            <div class="checkbox-item"><label for="mb-s123">Mercedes-Benz S123</label><input type="checkbox" id="mb-s123" name="mb-s123" value="mb-s123"></div>
+            <div class="checkbox-item"><label for="mb-w124">Mercedes-Benz W124</label><input type="checkbox" id="mb-w124" name="mb-w124" value="mb-w124"></div>
+            <div class="checkbox-item"><label for="mb-w201">Mercedes-Benz W201</label><input type="checkbox" id="mb-w201" name="mb-w201" value="mb-w201"></div>
+           
+            <div class="brand-section">
+            <div class="brand-title">Mercedes-AMG</div>
+            <div class="checkbox-item"><label for="amg-300-sel-6-8">AMG 300 SEL 6.8</label><input type="checkbox" id="amg-300-sel-6-8" name="amg-300-sel-6-8" value="amg-300-sel-6-8"></div>
+            <div class="checkbox-item"><label for="amg-300-e-5-6">Mercedes-Benz 300 E AMG 5.6</label><input type="checkbox" id="amg-300-e-5-6" name="amg-300-e-5-6" value="amg-300-e-5-6"></div>
+            <div class="checkbox-item"><label for="amg-190-e-3-2">Mercedes-Benz 190 E 3.2 AMG</label><input type="checkbox" id="amg-190-e-3-2" name="amg-190-e-3-2" value="amg-190-e-3-2"></div>
+            <div class="checkbox-item"><label for="amg-clk-gtr">Mercedes-Benz CLK GTR</label><input type="checkbox" id="amg-clk-gtr" name="amg-clk-gtr" value="amg-clk-gtr"></div>
+            <div class="checkbox-item"><label for="amg-clk-dtm">Mercedes-Benz CLK DTM AMG</label><input type="checkbox" id="amg-clk-dtm" name="amg-clk-dtm" value="amg-clk-dtm"></div>
+            <div class="checkbox-item"><label for="amg-sl-65-black">Mercedes-Benz SL 65 AMG Black Series</label><input type="checkbox" id="amg-sl-65-black" name="amg-sl-65-black" value="amg-sl-65-black"></div>
+            <div class="checkbox-item"><label for="amg-clk-63-black">Mercedes-Benz CLK 63 AMG Black Series</label><input type="checkbox" id="amg-clk-63-black" name="amg-clk-63-black" value="amg-clk-63-black"></div>
+            <div class="checkbox-item"><label for="amg-c-63-black">Mercedes-Benz C 63 AMG Black Series</label><input type="checkbox" id="amg-c-63-black" name="amg-c-63-black" value="amg-c-63-black"></div>
+            <div class="checkbox-item"><label for="amg-sls">Mercedes-Benz SLS AMG</label><input type="checkbox" id="amg-sls" name="amg-sls" value="amg-sls"></div>
+            <div class="checkbox-item"><label for="amg-sls-electric">Mercedes-Benz SLS AMG Electric Drive</label><input type="checkbox" id="amg-sls-electric" name="amg-sls-electric" value="amg-sls-electric"></div>
+            <div class="checkbox-item"><label for="amg-sls-black">Mercedes-Benz SLS AMG Black Series</label><input type="checkbox" id="amg-sls-black" name="amg-sls-black" value="amg-sls-black"></div>
+            <div class="checkbox-item"><label for="amg-gt-first-gen">Mercedes-AMG GT (First-Gen)</label><input type="checkbox" id="amg-gt-first-gen" name="amg-gt-first-gen" value="amg-gt-first-gen"></div>
+            <div class="checkbox-item"><label for="amg-gt-r">Mercedes-AMG GT R</label><input type="checkbox" id="amg-gt-r" name="amg-gt-r" value="amg-gt-r"></div>
+            <div class="checkbox-item"><label for="amg-gt-r-pro">Mercedes-AMG GT R Pro</label><input type="checkbox" id="amg-gt-r-pro" name="amg-gt-r-pro" value="amg-gt-r-pro"></div>
+            <div class="checkbox-item"><label for="amg-gt-black">Mercedes-AMG GT Black Series</label><input type="checkbox" id="amg-gt-black" name="amg-gt-black" value="amg-gt-black"></div>
+            <div class="checkbox-item"><label for="amg-gt-4door">Mercedes-AMG GT 4-Door Coupé</label><input type="checkbox" id="amg-gt-4door" name="amg-gt-4door" value="amg-gt-4door"></div>
+            <div class="checkbox-item"><label for="amg-one">Mercedes-AMG One</label><input type="checkbox" id="amg-one" name="amg-one" value="amg-one"></div>
+            <div class="checkbox-item"><label for="amg-gt-second-gen">Mercedes-AMG GT (Second-Gen)</label><input type="checkbox" id="amg-gt-second-gen" name="amg-gt-second-gen" value="amg-gt-second-gen"></div>
+        </div>
+
+                <div class="brand-section">
+            <div class="brand-title">Mercedes-Maybach</div>
+            <div class="checkbox-item"><label for="mercedes-maybach-s-class-x222">Mercedes-Maybach S-Class (X222)</label><input type="checkbox" id="mercedes-maybach-s-class-x222" name="mercedes-maybach-s-class-x222" value="mercedes-maybach-s-class-x222"></div>
+            <div class="checkbox-item"><label for="mercedes-maybach-s-class-z223">Mercedes-Maybach S-Class (Z223)</label><input type="checkbox" id="mercedes-maybach-s-class-z223" name="mercedes-maybach-s-class-z223" value="mercedes-maybach-s-class-z223"></div>
+            <div class="checkbox-item"><label for="mercedes-maybach-s600-pullman">Mercedes-Maybach S 600 Pullman</label><input type="checkbox" id="mercedes-maybach-s600-pullman" name="mercedes-maybach-s600-pullman" value="mercedes-maybach-s600-pullman"></div>
+            <div class="checkbox-item"><label for="mercedes-maybach-s650-cabriolet">Mercedes-Maybach S 650 Cabriolet</label><input type="checkbox" id="mercedes-maybach-s650-cabriolet" name="mercedes-maybach-s650-cabriolet" value="mercedes-maybach-s650-cabriolet"></div>
+            <div class="checkbox-item"><label for="mercedes-maybach-g650-landaulet">Mercedes-Maybach G 650 Landaulet</label><input type="checkbox" id="mercedes-maybach-g650-landaulet" name="mercedes-maybach-g650-landaulet" value="mercedes-maybach-g650-landaulet"></div>
+            <div class="checkbox-item"><label for="mercedes-maybach-gls600">Mercedes-Maybach GLS 600</label><input type="checkbox" id="mercedes-maybach-gls600" name="mercedes-maybach-gls600" value="mercedes-maybach-gls600"></div>
+            <div class="checkbox-item"><label for="mercedes-maybach-eqs-suv">Mercedes-Maybach EQS SUV</label><input type="checkbox" id="mercedes-maybach-eqs-suv" name="mercedes-maybach-eqs-suv" value="mercedes-maybach-eqs-suv"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Maybach</div>
+            <div class="checkbox-item"><label for="maybach-57">Maybach 57</label><input type="checkbox" id="maybach-57" name="maybach-57" value="maybach-57"></div>
+            <div class="checkbox-item"><label for="maybach-62">Maybach 62</label><input type="checkbox" id="maybach-62" name="maybach-62" value="maybach-62"></div>
+            <div class="checkbox-item"><label for="maybach-57s">Maybach 57S</label><input type="checkbox" id="maybach-57s" name="maybach-57s" value="maybach-57s"></div>
+            <div class="checkbox-item"><label for="maybach-62s">Maybach 62S</label><input type="checkbox" id="maybach-62s" name="maybach-62s" value="maybach-62s"></div>
+            <div class="checkbox-item"><label for="maybach-62-landaulet">Maybach 62 Landaulet</label><input type="checkbox" id="maybach-62-landaulet" name="maybach-62-landaulet" value="maybach-62-landaulet"></div>
+            <div class="checkbox-item"><label for="maybach-exelero">Maybach Exelero</label><input type="checkbox" id="maybach-exelero" name="maybach-exelero" value="maybach-exelero"></div>
+        </div>
+           <div class="brand-section">
+            <div class="brand-title">Fiat</div>
+            <div class="checkbox-item"><label for="fiat-500">Fiat 500</label><input type="checkbox" id="fiat-500" name="fiat-500" value="fiat-500"></div>
+            <div class="checkbox-item"><label for="fiat-panda">Fiat Panda</label><input type="checkbox" id="fiat-panda" name="fiat-panda" value="fiat-panda"></div>
+            <div class="checkbox-item"><label for="fiat-punto">Fiat Punto</label><input type="checkbox" id="fiat-punto" name="fiat-punto" value="fiat-punto"></div>
+            <div class="checkbox-item"><label for="fiat-tipo">Fiat Tipo</label><input type="checkbox" id="fiat-tipo" name="fiat-tipo" value="fiat-tipo"></div>
+            <div class="checkbox-item"><label for="fiat-uno">Fiat Uno</label><input type="checkbox" id="fiat-uno" name="fiat-uno" value="fiat-uno"></div>
+            <div class="checkbox-item"><label for="fiat-124-spider">Fiat 124 Spider</label><input type="checkbox" id="fiat-124-spider" name="fiat-124-spider" value="fiat-124-spider"></div>
+            <div class="checkbox-item"><label for="fiat-barchetta">Fiat Barchetta</label><input type="checkbox" id="fiat-barchetta" name="fiat-barchetta" value="fiat-barchetta"></div>
+            <div class="checkbox-item"><label for="fiat-coupe">Fiat Coupe</label><input type="checkbox" id="fiat-coupe" name="fiat-coupe" value="fiat-coupe"></div>
+            <div class="checkbox-item"><label for="fiat-multipla">Fiat Multipla</label><input type="checkbox" id="fiat-multipla" name="fiat-multipla" value="fiat-multipla"></div>
+            <div class="checkbox-item"><label for="fiat-500x">Fiat 500X</label><input type="checkbox" id="fiat-500x" name="fiat-500x" value="fiat-500x"></div>
+            <div class="checkbox-item"><label for="fiat-500l">Fiat 500L</label><input type="checkbox" id="fiat-500l" name="fiat-500l" value="fiat-500l"></div>
+            <div class="checkbox-item"><label for="fiat-fastback">Fiat Fastback</label><input type="checkbox" id="fiat-fastback" name="fiat-fastback" value="fiat-fastback"></div>
+            <div class="checkbox-item"><label for="fiat-pulse">Fiat Pulse</label><input type="checkbox" id="fiat-pulse" name="fiat-pulse" value="fiat-pulse"></div>
+            <div class="checkbox-item"><label for="fiat-strada">Fiat Strada</label><input type="checkbox" id="fiat-strada" name="fiat-strada" value="fiat-strada"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Alfa Romeo</div>
+            <div class="checkbox-item"><label for="alfa-giulia">Alfa Romeo Giulia</label><input type="checkbox" id="alfa-giulia" name="alfa-giulia" value="alfa-giulia"></div>
+            <div class="checkbox-item"><label for="alfa-stelvio">Alfa Romeo Stelvio</label><input type="checkbox" id="alfa-stelvio" name="alfa-stelvio" value="alfa-stelvio"></div>
+            <div class="checkbox-item"><label for="alfa-tonale">Alfa Romeo Tonale</label><input type="checkbox" id="alfa-tonale" name="alfa-tonale" value="alfa-tonale"></div>
+            <div class="checkbox-item"><label for="alfa-junior">Alfa Romeo Junior</label><input type="checkbox" id="alfa-junior" name="alfa-junior" value="alfa-junior"></div>
+            <div class="checkbox-item"><label for="alfa-33-stradale">Alfa Romeo 33 Stradale</label><input type="checkbox" id="alfa-33-stradale" name="alfa-33-stradale" value="alfa-33-stradale"></div>
+            <div class="checkbox-item"><label for="alfa-4c">Alfa Romeo 4C</label><input type="checkbox" id="alfa-4c" name="alfa-4c" value="alfa-4c"></div>
+            <div class="checkbox-item"><label for="alfa-8c">Alfa Romeo 8C Competizione</label><input type="checkbox" id="alfa-8c" name="alfa-8c" value="alfa-8c"></div>
+            <div class="checkbox-item"><label for="alfa-brera">Alfa Romeo Brera</label><input type="checkbox" id="alfa-brera" name="alfa-brera" value="alfa-brera"></div>
+            <div class="checkbox-item"><label for="alfa-spider">Alfa Romeo Spider</label><input type="checkbox" id="alfa-spider" name="alfa-spider" value="alfa-spider"></div>
+            <div class="checkbox-item"><label for="alfa-gtv">Alfa Romeo GTV</label><input type="checkbox" id="alfa-gtv" name="alfa-gtv" value="alfa-gtv"></div>
+            <div class="checkbox-item"><label for="alfa-159">Alfa Romeo 159</label><input type="checkbox" id="alfa-159" name="alfa-159" value="alfa-159"></div>
+            <div class="checkbox-item"><label for="alfa-156">Alfa Romeo 156</label><input type="checkbox" id="alfa-156" name="alfa-156" value="alfa-156"></div>
+            <div class="checkbox-item"><label for="alfa-147">Alfa Romeo 147</label><input type="checkbox" id="alfa-147" name="alfa-147" value="alfa-147"></div>
+            <div class="checkbox-item"><label for="alfa-giulietta">Alfa Romeo Giulietta</label><input type="checkbox" id="alfa-giulietta" name="alfa-giulietta" value="alfa-giulietta"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Maserati</div>
+            <div class="checkbox-item"><label for="maserati-granturismo">Maserati GranTurismo</label><input type="checkbox" id="maserati-granturismo" name="maserati-granturismo" value="maserati-granturismo"></div>
+            <div class="checkbox-item"><label for="maserati-grancabrio">Maserati GranCabrio</label><input type="checkbox" id="maserati-grancabrio" name="maserati-grancabrio" value="maserati-grancabrio"></div>
+            <div class="checkbox-item"><label for="maserati-ghibli">Maserati Ghibli</label><input type="checkbox" id="maserati-ghibli" name="maserati-ghibli" value="maserati-ghibli"></div>
+            <div class="checkbox-item"><label for="maserati-quattroporte">Maserati Quattroporte</label><input type="checkbox" id="maserati-quattroporte" name="maserati-quattroporte" value="maserati-quattroporte"></div>
+            <div class="checkbox-item"><label for="maserati-levante">Maserati Levante</label><input type="checkbox" id="maserati-levante" name="maserati-levante" value="maserati-levante"></div>
+            <div class="checkbox-item"><label for="maserati-grecale">Maserati Grecale</label><input type="checkbox" id="maserati-grecale" name="maserati-grecale" value="maserati-grecale"></div>
+            <div class="checkbox-item"><label for="maserati-mc20">Maserati MC20</label><input type="checkbox" id="maserati-mc20" name="maserati-mc20" value="maserati-mc20"></div>
+            <div class="checkbox-item"><label for="maserati-mc12">Maserati MC12</label><input type="checkbox" id="maserati-mc12" name="maserati-mc12" value="maserati-mc12"></div>
+            <div class="checkbox-item"><label for="maserati-bora">Maserati Bora</label><input type="checkbox" id="maserati-bora" name="maserati-bora" value="maserati-bora"></div>
+            <div class="checkbox-item"><label for="maserati-merak">Maserati Merak</label><input type="checkbox" id="maserati-merak" name="maserati-merak" value="maserati-merak"></div>
+            <div class="checkbox-item"><label for="maserati-3200gt">Maserati 3200 GT</label><input type="checkbox" id="maserati-3200gt" name="maserati-3200gt" value="maserati-3200gt"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Lancia</div>
+            <div class="checkbox-item"><label for="lancia-ypsilon">Lancia Ypsilon</label><input type="checkbox" id="lancia-ypsilon" name="lancia-ypsilon" value="lancia-ypsilon"></div>
+            <div class="checkbox-item"><label for="lancia-delta">Lancia Delta</label><input type="checkbox" id="lancia-delta" name="lancia-delta" value="lancia-delta"></div>
+            <div class="checkbox-item"><label for="lancia-stratos">Lancia Stratos</label><input type="checkbox" id="lancia-stratos" name="lancia-stratos" value="lancia-stratos"></div>
+            <div class="checkbox-item"><label for="lancia-037">Lancia 037</label><input type="checkbox" id="lancia-037" name="lancia-037" value="lancia-037"></div>
+            <div class="checkbox-item"><label for="lancia-fulvia">Lancia Fulvia</label><input type="checkbox" id="lancia-fulvia" name="lancia-fulvia" value="lancia-fulvia"></div>
+            <div class="checkbox-item"><label for="lancia-aurelia">Lancia Aurelia</label><input type="checkbox" id="lancia-aurelia" name="lancia-aurelia" value="lancia-aurelia"></div>
+            <div class="checkbox-item"><label for="lancia-thema">Lancia Thema</label><input type="checkbox" id="lancia-thema" name="lancia-thema" value="lancia-thema"></div>
+            <div class="checkbox-item"><label for="lancia-thesis">Lancia Thesis</label><input type="checkbox" id="lancia-thesis" name="lancia-thesis" value="lancia-thesis"></div>
+            <div class="checkbox-item"><label for="lancia-lybra">Lancia Lybra</label><input type="checkbox" id="lancia-lybra" name="lancia-lybra" value="lancia-lybra"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Abarth</div>
+            <div class="checkbox-item"><label for="abarth-595">Abarth 595</label><input type="checkbox" id="abarth-595" name="abarth-595" value="abarth-595"></div>
+            <div class="checkbox-item"><label for="abarth-695">Abarth 695</label><input type="checkbox" id="abarth-695" name="abarth-695" value="abarth-695"></div>
+            <div class="checkbox-item"><label for="abarth-124-spider">Abarth 124 Spider</label><input type="checkbox" id="abarth-124-spider" name="abarth-124-spider" value="abarth-124-spider"></div>
+            <div class="checkbox-item"><label for="abarth-500e">Abarth 500e</label><input type="checkbox" id="abarth-500e" name="abarth-500e" value="abarth-500e"></div>
+            <div class="checkbox-item"><label for="abarth-600e">Abarth 600e</label><input type="checkbox" id="abarth-600e" name="abarth-600e" value="abarth-600e"></div>
+
+                    <div class="brand-section">
+            <div class="brand-title">Opel</div>
+            <div class="checkbox-item"><label for="opel-corsa">Opel Corsa</label><input type="checkbox" id="opel-corsa" name="opel-corsa" value="opel-corsa"></div>
+            <div class="checkbox-item"><label for="opel-astra">Opel Astra</label><input type="checkbox" id="opel-astra" name="opel-astra" value="opel-astra"></div>
+            <div class="checkbox-item"><label for="opel-insignia">Opel Insignia</label><input type="checkbox" id="opel-insignia" name="opel-insignia" value="opel-insignia"></div>
+            <div class="checkbox-item"><label for="opel-mokka">Opel Mokka</label><input type="checkbox" id="opel-mokka" name="opel-mokka" value="opel-mokka"></div>
+            <div class="checkbox-item"><label for="opel-crossland">Opel Crossland</label><input type="checkbox" id="opel-crossland" name="opel-crossland" value="opel-crossland"></div>
+            <div class="checkbox-item"><label for="opel-grandland">Opel Grandland</label><input type="checkbox" id="opel-grandland" name="opel-grandland" value="opel-grandland"></div>
+            <div class="checkbox-item"><label for="opel-frontera">Opel Frontera</label><input type="checkbox" id="opel-frontera" name="opel-frontera" value="opel-frontera"></div>
+            <div class="checkbox-item"><label for="opel-zafira">Opel Zafira</label><input type="checkbox" id="opel-zafira" name="opel-zafira" value="opel-zafira"></div>
+            <div class="checkbox-item"><label for="opel-adam">Opel Adam</label><input type="checkbox" id="opel-adam" name="opel-adam" value="opel-adam"></div>
+            <div class="checkbox-item"><label for="opel-gt">Opel GT</label><input type="checkbox" id="opel-gt" name="opel-gt" value="opel-gt"></div>
+            <div class="checkbox-item"><label for="opel-manta">Opel Manta</label><input type="checkbox" id="opel-manta" name="opel-manta" value="opel-manta"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Vauxhall</div>
+            <div class="checkbox-item"><label for="vauxhall-viva">Vauxhall Viva</label><input type="checkbox" id="vauxhall-viva" name="vauxhall-viva" value="vauxhall-viva"></div>
+            <div class="checkbox-item"><label for="vauxhall-cavalier">Vauxhall Cavalier</label><input type="checkbox" id="vauxhall-cavalier" name="vauxhall-cavalier" value="vauxhall-cavalier"></div>
+            <div class="checkbox-item"><label for="vauxhall-monaro">Vauxhall Monaro</label><input type="checkbox" id="vauxhall-monaro" name="vauxhall-monaro" value="vauxhall-monaro"></div>
+            <div class="checkbox-item"><label for="vauxhall-vxr8">Vauxhall VXR8</label><input type="checkbox" id="vauxhall-vxr8" name="vauxhall-vxr8" value="vauxhall-vxr8"></div>
+            <div class="checkbox-item"><label for="vauxhall-corsa">Vauxhall Corsa</label><input type="checkbox" id="vauxhall-corsa" name="vauxhall-corsa" value="vauxhall-corsa"></div>
+            <div class="checkbox-item"><label for="vauxhall-astra">Vauxhall Astra</label><input type="checkbox" id="vauxhall-astra" name="vauxhall-astra" value="vauxhall-astra"></div>
+            <div class="checkbox-item"><label for="vauxhall-insignia">Vauxhall Insignia</label><input type="checkbox" id="vauxhall-insignia" name="vauxhall-insignia" value="vauxhall-insignia"></div>
+            <div class="checkbox-item"><label for="vauxhall-mokka">Vauxhall Mokka</label><input type="checkbox" id="vauxhall-mokka" name="vauxhall-mokka" value="vauxhall-mokka"></div>
+            <div class="checkbox-item"><label for="vauxhall-crossland">Vauxhall Crossland</label><input type="checkbox" id="vauxhall-crossland" name="vauxhall-crossland" value="vauxhall-crossland"></div>
+            <div class="checkbox-item"><label for="vauxhall-grandland">Vauxhall Grandland</label><input type="checkbox" id="vauxhall-grandland" name="vauxhall-grandland" value="vauxhall-grandland"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">DS Automobiles</div>
+            <div class="checkbox-item"><label for="ds-3">DS Automobiles DS 3</label><input type="checkbox" id="ds-3" name="ds-3" value="ds-3"></div>
+            <div class="checkbox-item"><label for="ds-4">DS Automobiles DS 4</label><input type="checkbox" id="ds-4" name="ds-4" value="ds-4"></div>
+            <div class="checkbox-item"><label for="ds-7">DS Automobiles DS 7</label><input type="checkbox" id="ds-7" name="ds-7" value="ds-7"></div>
+            <div class="checkbox-item"><label for="ds-9">DS Automobiles DS 9</label><input type="checkbox" id="ds-9" name="ds-9" value="ds-9"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Toyota</div>
+            <div class="checkbox-item"><label for="toyota-corolla">Toyota Corolla</label><input type="checkbox" id="toyota-corolla" name="toyota-corolla" value="toyota-corolla"></div>
+            <div class="checkbox-item"><label for="toyota-camry">Toyota Camry</label><input type="checkbox" id="toyota-camry" name="toyota-camry" value="toyota-camry"></div>
+            <div class="checkbox-item"><label for="toyota-prius">Toyota Prius</label><input type="checkbox" id="toyota-prius" name="toyota-prius" value="toyota-prius"></div>
+            <div class="checkbox-item"><label for="toyota-yaris">Toyota Yaris</label><input type="checkbox" id="toyota-yaris" name="toyota-yaris" value="toyota-yaris"></div>
+            <div class="checkbox-item"><label for="toyota-crown">Toyota Crown</label><input type="checkbox" id="toyota-crown" name="toyota-crown" value="toyota-crown"></div>
+            <div class="checkbox-item"><label for="toyota-century">Toyota Century</label><input type="checkbox" id="toyota-century" name="toyota-century" value="toyota-century"></div>
+            <div class="checkbox-item"><label for="toyota-supra">Toyota Supra</label><input type="checkbox" id="toyota-supra" name="toyota-supra" value="toyota-supra"></div>
+            <div class="checkbox-item"><label for="toyota-celica">Toyota Celica</label><input type="checkbox" id="toyota-celica" name="toyota-celica" value="toyota-celica"></div>
+            <div class="checkbox-item"><label for="toyota-mr2">Toyota MR2</label><input type="checkbox" id="toyota-mr2" name="toyota-mr2" value="toyota-mr2"></div>
+            <div class="checkbox-item"><label for="toyota-rav4">Toyota RAV4</label><input type="checkbox" id="toyota-rav4" name="toyota-rav4" value="toyota-rav4"></div>
+            <div class="checkbox-item"><label for="toyota-highlander">Toyota Highlander</label><input type="checkbox" id="toyota-highlander" name="toyota-highlander" value="toyota-highlander"></div>
+            <div class="checkbox-item"><label for="toyota-4runner">Toyota 4Runner</label><input type="checkbox" id="toyota-4runner" name="toyota-4runner" value="toyota-4runner"></div>
+            <div class="checkbox-item"><label for="toyota-land-cruiser">Toyota Land Cruiser</label><input type="checkbox" id="toyota-land-cruiser" name="toyota-land-cruiser" value="toyota-land-cruiser"></div>
+            <div class="checkbox-item"><label for="toyota-sequoia">Toyota Sequoia</label><input type="checkbox" id="toyota-sequoia" name="toyota-sequoia" value="toyota-sequoia"></div>
+            <div class="checkbox-item"><label for="toyota-tacoma">Toyota Tacoma</label><input type="checkbox" id="toyota-tacoma" name="toyota-tacoma" value="toyota-tacoma"></div>
+            <div class="checkbox-item"><label for="toyota-tundra">Toyota Tundra</label><input type="checkbox" id="toyota-tundra" name="toyota-tundra" value="toyota-tundra"></div>
+            <div class="checkbox-item"><label for="toyota-hilux">Toyota Hilux</label><input type="checkbox" id="toyota-hilux" name="toyota-hilux" value="toyota-hilux"></div>
+            <div class="checkbox-item"><label for="toyota-c-hr">Toyota C-HR</label><input type="checkbox" id="toyota-c-hr" name="toyota-c-hr" value="toyota-c-hr"></div>
+            <div class="checkbox-item"><label for="toyota-bz4x">Toyota bZ4X</label><input type="checkbox" id="toyota-bz4x" name="toyota-bz4x" value="toyota-bz4x"></div>
+            <div class="checkbox-item"><label for="toyota-gr86">Toyota GR86</label><input type="checkbox" id="toyota-gr86" name="toyota-gr86" value="toyota-gr86"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Lexus</div>
+            <div class="checkbox-item"><label for="lexus-is">Lexus IS</label><input type="checkbox" id="lexus-is" name="lexus-is" value="lexus-is"></div>
+            <div class="checkbox-item"><label for="lexus-es">Lexus ES</label><input type="checkbox" id="lexus-es" name="lexus-es" value="lexus-es"></div>
+            <div class="checkbox-item"><label for="lexus-gs">Lexus GS</label><input type="checkbox" id="lexus-gs" name="lexus-gs" value="lexus-gs"></div>
+            <div class="checkbox-item"><label for="lexus-ls">Lexus LS</label><input type="checkbox" id="lexus-ls" name="lexus-ls" value="lexus-ls"></div>
+            <div class="checkbox-item"><label for="lexus-nx">Lexus NX</label><input type="checkbox" id="lexus-nx" name="lexus-nx" value="lexus-nx"></div>
+            <div class="checkbox-item"><label for="lexus-rx">Lexus RX</label><input type="checkbox" id="lexus-rx" name="lexus-rx" value="lexus-rx"></div>
+            <div class="checkbox-item"><label for="lexus-gx">Lexus GX</label><input type="checkbox" id="lexus-gx" name="lexus-gx" value="lexus-gx"></div>
+            <div class="checkbox-item"><label for="lexus-lx">Lexus LX</label><input type="checkbox" id="lexus-lx" name="lexus-lx" value="lexus-lx"></div>
+            <div class="checkbox-item"><label for="lexus-lc">Lexus LC</label><input type="checkbox" id="lexus-lc" name="lexus-lc" value="lexus-lc"></div>
+            <div class="checkbox-item"><label for="lexus-rc">Lexus RC</label><input type="checkbox" id="lexus-rc" name="lexus-rc" value="lexus-rc"></div>
+
+            <div class="brand-section">
+            <div class="brand-title">Daihatsu</div>
+            <div class="checkbox-item"><label for="daihatsu-copen">Daihatsu Copen</label><input type="checkbox" id="daihatsu-copen" name="daihatsu-copen" value="daihatsu-copen"></div>
+            <div class="checkbox-item"><label for="daihatsu-mira">Daihatsu Mira</label><input type="checkbox" id="daihatsu-mira" name="daihatsu-mira" value="daihatsu-mira"></div>
+            <div class="checkbox-item"><label for="daihatsu-move">Daihatsu Move</label><input type="checkbox" id="daihatsu-move" name="daihatsu-move" value="daihatsu-move"></div>
+            <div class="checkbox-item"><label for="daihatsu-tanto">Daihatsu Tanto</label><input type="checkbox" id="daihatsu-tanto" name="daihatsu-tanto" value="daihatsu-tanto"></div>
+            <div class="checkbox-item"><label for="daihatsu-hijet">Daihatsu Hijet</label><input type="checkbox" id="daihatsu-hijet" name="daihatsu-hijet" value="daihatsu-hijet"></div>
+            <div class="checkbox-item"><label for="daihatsu-rocky">Daihatsu Rocky</label><input type="checkbox" id="daihatsu-rocky" name="daihatsu-rocky" value="daihatsu-rocky"></div>
+            <div class="checkbox-item"><label for="daihatsu-taft">Daihatsu Taft</label><input type="checkbox" id="daihatsu-taft" name="daihatsu-taft" value="daihatsu-taft"></div>
+            <div class="checkbox-item"><label for="daihatsu-sirion">Daihatsu Sirion</label><input type="checkbox" id="daihatsu-sirion" name="daihatsu-sirion" value="daihatsu-sirion"></div>
+            <div class="checkbox-item"><label for="daihatsu-terios">Daihatsu Terios</label><input type="checkbox" id="daihatsu-terios" name="daihatsu-terios" value="daihatsu-terios"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Hyundai</div>
+            <div class="checkbox-item"><label for="hyundai-accent">Hyundai Accent</label><input type="checkbox" id="hyundai-accent" name="hyundai-accent" value="hyundai-accent"></div>
+            <div class="checkbox-item"><label for="hyundai-elantra">Hyundai Elantra</label><input type="checkbox" id="hyundai-elantra" name="hyundai-elantra" value="hyundai-elantra"></div>
+            <div class="checkbox-item"><label for="hyundai-sonata">Hyundai Sonata</label><input type="checkbox" id="hyundai-sonata" name="hyundai-sonata" value="hyundai-sonata"></div>
+            <div class="checkbox-item"><label for="hyundai-azera">Hyundai Azera</label><input type="checkbox" id="hyundai-azera" name="hyundai-azera" value="hyundai-azera"></div>
+            <div class="checkbox-item"><label for="hyundai-i10">Hyundai i10</label><input type="checkbox" id="hyundai-i10" name="hyundai-i10" value="hyundai-i10"></div>
+            <div class="checkbox-item"><label for="hyundai-i20">Hyundai i20</label><input type="checkbox" id="hyundai-i20" name="hyundai-i20" value="hyundai-i20"></div>
+            <div class="checkbox-item"><label for="hyundai-i30">Hyundai i30</label><input type="checkbox" id="hyundai-i30" name="hyundai-i30" value="hyundai-i30"></div>
+            <div class="checkbox-item"><label for="hyundai-veloster">Hyundai Veloster</label><input type="checkbox" id="hyundai-veloster" name="hyundai-veloster" value="hyundai-veloster"></div>
+            <div class="checkbox-item"><label for="hyundai-tiburon">Hyundai Tiburon</label><input type="checkbox" id="hyundai-tiburon" name="hyundai-tiburon" value="hyundai-tiburon"></div>
+            <div class="checkbox-item"><label for="hyundai-venue">Hyundai Venue</label><input type="checkbox" id="hyundai-venue" name="hyundai-venue" value="hyundai-venue"></div>
+            <div class="checkbox-item"><label for="hyundai-kona">Hyundai Kona</label><input type="checkbox" id="hyundai-kona" name="hyundai-kona" value="hyundai-kona"></div>
+            <div class="checkbox-item"><label for="hyundai-tucson">Hyundai Tucson</label><input type="checkbox" id="hyundai-tucson" name="hyundai-tucson" value="hyundai-tucson"></div>
+            <div class="checkbox-item"><label for="hyundai-santa-fe">Hyundai Santa Fe</label><input type="checkbox" id="hyundai-santa-fe" name="hyundai-santa-fe" value="hyundai-santa-fe"></div>
+            <div class="checkbox-item"><label for="hyundai-palisade">Hyundai Palisade</label><input type="checkbox" id="hyundai-palisade" name="hyundai-palisade" value="hyundai-palisade"></div>
+            <div class="checkbox-item"><label for="hyundai-ioniq5">Hyundai Ioniq 5</label><input type="checkbox" id="hyundai-ioniq5" name="hyundai-ioniq5" value="hyundai-ioniq5"></div>
+            <div class="checkbox-item"><label for="hyundai-ioniq6">Hyundai Ioniq 6</label><input type="checkbox" id="hyundai-ioniq6" name="hyundai-ioniq6" value="hyundai-ioniq6"></div>
+            <div class="checkbox-item"><label for="hyundai-ioniq9">Hyundai Ioniq 9</label><input type="checkbox" id="hyundai-ioniq9" name="hyundai-ioniq9" value="hyundai-ioniq9"></div>
+            <div class="checkbox-item"><label for="hyundai-santa-cruz">Hyundai Santa Cruz</label><input type="checkbox" id="hyundai-santa-cruz" name="hyundai-santa-cruz" value="hyundai-santa-cruz"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Kia</div>
+            <div class="checkbox-item"><label for="kia-picanto">Kia Picanto</label><input type="checkbox" id="kia-picanto" name="kia-picanto" value="kia-picanto"></div>
+            <div class="checkbox-item"><label for="kia-rio">Kia Rio</label><input type="checkbox" id="kia-rio" name="kia-rio" value="kia-rio"></div>
+            <div class="checkbox-item"><label for="kia-ceed">Kia Ceed</label><input type="checkbox" id="kia-ceed" name="kia-ceed" value="kia-ceed"></div>
+            <div class="checkbox-item"><label for="kia-forte">Kia Forte</label><input type="checkbox" id="kia-forte" name="kia-forte" value="kia-forte"></div>
+            <div class="checkbox-item"><label for="kia-k5">Kia K5</label><input type="checkbox" id="kia-k5" name="kia-k5" value="kia-k5"></div>
+            <div class="checkbox-item"><label for="kia-optima">Kia Optima</label><input type="checkbox" id="kia-optima" name="kia-optima" value="kia-optima"></div>
+            <div class="checkbox-item"><label for="kia-stinger">Kia Stinger</label><input type="checkbox" id="kia-stinger" name="kia-stinger" value="kia-stinger"></div>
+            <div class="checkbox-item"><label for="kia-soul">Kia Soul</label><input type="checkbox" id="kia-soul" name="kia-soul" value="kia-soul"></div>
+            <div class="checkbox-item"><label for="kia-stonic">Kia Stonic</label><input type="checkbox" id="kia-stonic" name="kia-stonic" value="kia-stonic"></div>
+            <div class="checkbox-item"><label for="kia-seltos">Kia Seltos</label><input type="checkbox" id="kia-seltos" name="kia-seltos" value="kia-seltos"></div>
+            <div class="checkbox-item"><label for="kia-sportage">Kia Sportage</label><input type="checkbox" id="kia-sportage" name="kia-sportage" value="kia-sportage"></div>
+            <div class="checkbox-item"><label for="kia-sorento">Kia Sorento</label><input type="checkbox" id="kia-sorento" name="kia-sorento" value="kia-sorento"></div>
+            <div class="checkbox-item"><label for="kia-telluride">Kia Telluride</label><input type="checkbox" id="kia-telluride" name="kia-telluride" value="kia-telluride"></div>
+            <div class="checkbox-item"><label for="kia-niro">Kia Niro</label><input type="checkbox" id="kia-niro" name="kia-niro" value="kia-niro"></div>
+            <div class="checkbox-item"><label for="kia-ev3">Kia EV3</label><input type="checkbox" id="kia-ev3" name="kia-ev3" value="kia-ev3"></div>
+            <div class="checkbox-item"><label for="kia-ev6">Kia EV6</label><input type="checkbox" id="kia-ev6" name="kia-ev6" value="kia-ev6"></div>
+            <div class="checkbox-item"><label for="kia-ev9">Kia EV9</label><input type="checkbox" id="kia-ev9" name="kia-ev9" value="kia-ev9"></div>
+            <div class="checkbox-item"><label for="kia-carnival">Kia Carnival</label><input type="checkbox" id="kia-carnival" name="kia-carnival" value="kia-carnival"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Genesis</div>
+            <div class="checkbox-item"><label for="genesis-g70">Genesis G70</label><input type="checkbox" id="genesis-g70" name="genesis-g70" value="genesis-g70"></div>
+            <div class="checkbox-item"><label for="genesis-g80">Genesis G80</label><input type="checkbox" id="genesis-g80" name="genesis-g80" value="genesis-g80"></div>
+            <div class="checkbox-item"><label for="genesis-g90">Genesis G90</label><input type="checkbox" id="genesis-g90" name="genesis-g90" value="genesis-g90"></div>
+            <div class="checkbox-item"><label for="genesis-gv60">Genesis GV60</label><input type="checkbox" id="genesis-gv60" name="genesis-gv60" value="genesis-gv60"></div>
+            <div class="checkbox-item"><label for="genesis-gv70">Genesis GV70</label><input type="checkbox" id="genesis-gv70" name="genesis-gv70" value="genesis-gv70"></div>
+            <div class="checkbox-item"><label for="genesis-gv80">Genesis GV80</label><input type="checkbox" id="genesis-gv80" name="genesis-gv80" value="genesis-gv80"></div>
+            <div class="checkbox-item"><label for="genesis-gv90">Genesis GV90</label><input type="checkbox" id="genesis-gv90" name="genesis-gv90" value="genesis-gv90"></div>
+        </div>
+
+         <div class="brand-section">
+            <div class="brand-title">Chevrolet</div>
+            <div class="checkbox-item"><label for="chevrolet-corvette">Chevrolet Corvette</label><input type="checkbox" id="chevrolet-corvette" name="chevrolet-corvette" value="chevrolet-corvette"></div>
+            <div class="checkbox-item"><label for="chevrolet-camaro">Chevrolet Camaro</label><input type="checkbox" id="chevrolet-camaro" name="chevrolet-camaro" value="chevrolet-camaro"></div>
+            <div class="checkbox-item"><label for="chevrolet-malibu">Chevrolet Malibu</label><input type="checkbox" id="chevrolet-malibu" name="chevrolet-malibu" value="chevrolet-malibu"></div>
+            <div class="checkbox-item"><label for="chevrolet-impala">Chevrolet Impala</label><input type="checkbox" id="chevrolet-impala" name="chevrolet-impala" value="chevrolet-impala"></div>
+            <div class="checkbox-item"><label for="chevrolet-cruze">Chevrolet Cruze</label><input type="checkbox" id="chevrolet-cruze" name="chevrolet-cruze" value="chevrolet-cruze"></div>
+            <div class="checkbox-item"><label for="chevrolet-spark">Chevrolet Spark</label><input type="checkbox" id="chevrolet-spark" name="chevrolet-spark" value="chevrolet-spark"></div>
+            <div class="checkbox-item"><label for="chevrolet-bolt-ev">Chevrolet Bolt EV</label><input type="checkbox" id="chevrolet-bolt-ev" name="chevrolet-bolt-ev" value="chevrolet-bolt-ev"></div>
+            <div class="checkbox-item"><label for="chevrolet-equinox">Chevrolet Equinox</label><input type="checkbox" id="chevrolet-equinox" name="chevrolet-equinox" value="chevrolet-equinox"></div>
+            <div class="checkbox-item"><label for="chevrolet-blazer">Chevrolet Blazer</label><input type="checkbox" id="chevrolet-blazer" name="chevrolet-blazer" value="chevrolet-blazer"></div>
+            <div class="checkbox-item"><label for="chevrolet-trailblazer">Chevrolet Trailblazer</label><input type="checkbox" id="chevrolet-trailblazer" name="chevrolet-trailblazer" value="chevrolet-trailblazer"></div>
+            <div class="checkbox-item"><label for="chevrolet-traverse">Chevrolet Traverse</label><input type="checkbox" id="chevrolet-traverse" name="chevrolet-traverse" value="chevrolet-traverse"></div>
+            <div class="checkbox-item"><label for="chevrolet-tahoe">Chevrolet Tahoe</label><input type="checkbox" id="chevrolet-tahoe" name="chevrolet-tahoe" value="chevrolet-tahoe"></div>
+            <div class="checkbox-item"><label for="chevrolet-suburban">Chevrolet Suburban</label><input type="checkbox" id="chevrolet-suburban" name="chevrolet-suburban" value="chevrolet-suburban"></div>
+            <div class="checkbox-item"><label for="chevrolet-silverado">Chevrolet Silverado</label><input type="checkbox" id="chevrolet-silverado" name="chevrolet-silverado" value="chevrolet-silverado"></div>
+            <div class="checkbox-item"><label for="chevrolet-colorado">Chevrolet Colorado</label><input type="checkbox" id="chevrolet-colorado" name="chevrolet-colorado" value="chevrolet-colorado"></div>
+            <div class="checkbox-item"><label for="chevrolet-trax">Chevrolet Trax</label><input type="checkbox" id="chevrolet-trax" name="chevrolet-trax" value="chevrolet-trax"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">GMC</div>
+            <div class="checkbox-item"><label for="gmc-sierra">GMC Sierra</label><input type="checkbox" id="gmc-sierra" name="gmc-sierra" value="gmc-sierra"></div>
+            <div class="checkbox-item"><label for="gmc-canyon">GMC Canyon</label><input type="checkbox" id="gmc-canyon" name="gmc-canyon" value="gmc-canyon"></div>
+            <div class="checkbox-item"><label for="gmc-yukon">GMC Yukon</label><input type="checkbox" id="gmc-yukon" name="gmc-yukon" value="gmc-yukon"></div>
+            <div class="checkbox-item"><label for="gmc-yukon-xl">GMC Yukon XL</label><input type="checkbox" id="gmc-yukon-xl" name="gmc-yukon-xl" value="gmc-yukon-xl"></div>
+            <div class="checkbox-item"><label for="gmc-acadia">GMC Acadia</label><input type="checkbox" id="gmc-acadia" name="gmc-acadia" value="gmc-acadia"></div>
+            <div class="checkbox-item"><label for="gmc-terrain">GMC Terrain</label><input type="checkbox" id="gmc-terrain" name="gmc-terrain" value="gmc-terrain"></div>
+            <div class="checkbox-item"><label for="gmc-savana">GMC Savana</label><input type="checkbox" id="gmc-savana" name="gmc-savana" value="gmc-savana"></div>
+            <div class="checkbox-item"><label for="gmc-hummer-ev">GMC Hummer EV</label><input type="checkbox" id="gmc-hummer-ev" name="gmc-hummer-ev" value="gmc-hummer-ev"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Buick</div>
+            <div class="checkbox-item"><label for="buick-regal">Buick Regal</label><input type="checkbox" id="buick-regal" name="buick-regal" value="buick-regal"></div>
+            <div class="checkbox-item"><label for="buick-lacrosse">Buick LaCrosse</label><input type="checkbox" id="buick-lacrosse" name="buick-lacrosse" value="buick-lacrosse"></div>
+            <div class="checkbox-item"><label for="buick-verano">Buick Verano</label><input type="checkbox" id="buick-verano" name="buick-verano" value="buick-verano"></div>
+            <div class="checkbox-item"><label for="buick-encore">Buick Encore</label><input type="checkbox" id="buick-encore" name="buick-encore" value="buick-encore"></div>
+            <div class="checkbox-item"><label for="buick-encore-gx">Buick Encore GX</label><input type="checkbox" id="buick-encore-gx" name="buick-encore-gx" value="buick-encore-gx"></div>
+            <div class="checkbox-item"><label for="buick-envision">Buick Envision</label><input type="checkbox" id="buick-envision" name="buick-envision" value="buick-envision"></div>
+            <div class="checkbox-item"><label for="buick-enclave">Buick Enclave</label><input type="checkbox" id="buick-enclave" name="buick-enclave" value="buick-enclave"></div>
+            <div class="checkbox-item"><label for="buick-envista">Buick Envista</label><input type="checkbox" id="buick-envista" name="buick-envista" value="buick-envista"></div>
+            <div class="checkbox-item"><label for="buick-grand-national">Buick Grand National</label><input type="checkbox" id="buick-grand-national" name="buick-grand-national" value="buick-grand-national"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Cadillac</div>
+            <div class="checkbox-item"><label for="cadillac-ct4">Cadillac CT4</label><input type="checkbox" id="cadillac-ct4" name="cadillac-ct4" value="cadillac-ct4"></div>
+            <div class="checkbox-item"><label for="cadillac-ct5">Cadillac CT5</label><input type="checkbox" id="cadillac-ct5" name="cadillac-ct5" value="cadillac-ct5"></div>
+            <div class="checkbox-item"><label for="cadillac-ct6">Cadillac CT6</label><input type="checkbox" id="cadillac-ct6" name="cadillac-ct6" value="cadillac-ct6"></div>
+            <div class="checkbox-item"><label for="cadillac-ats">Cadillac ATS</label><input type="checkbox" id="cadillac-ats" name="cadillac-ats" value="cadillac-ats"></div>
+            <div class="checkbox-item"><label for="cadillac-cts">Cadillac CTS</label><input type="checkbox" id="cadillac-cts" name="cadillac-cts" value="cadillac-cts"></div>
+            <div class="checkbox-item"><label for="cadillac-escalade">Cadillac Escalade</label><input type="checkbox" id="cadillac-escalade" name="cadillac-escalade" value="cadillac-escalade"></div>
+            <div class="checkbox-item"><label for="cadillac-xt4">Cadillac XT4</label><input type="checkbox" id="cadillac-xt4" name="cadillac-xt4" value="cadillac-xt4"></div>
+            <div class="checkbox-item"><label for="cadillac-xt5">Cadillac XT5</label><input type="checkbox" id="cadillac-xt5" name="cadillac-xt5" value="cadillac-xt5"></div>
+            <div class="checkbox-item"><label for="cadillac-xt6">Cadillac XT6</label><input type="checkbox" id="cadillac-xt6" name="cadillac-xt6" value="cadillac-xt6"></div>
+            <div class="checkbox-item"><label for="cadillac-lyriq">Cadillac Lyriq</label><input type="checkbox" id="cadillac-lyriq" name="cadillac-lyriq" value="cadillac-lyriq"></div>
+            <div class="checkbox-item"><label for="cadillac-celestiq">Cadillac Celestiq</label><input type="checkbox" id="cadillac-celestiq" name="cadillac-celestiq" value="cadillac-celestiq"></div>
+            <div class="checkbox-item"><label for="cadillac-optiq">Cadillac Optiq</label><input type="checkbox" id="cadillac-optiq" name="cadillac-optiq" value="cadillac-optiq"></div>
+            <div class="checkbox-item"><label for="cadillac-vistiq">Cadillac Vistiq</label><input type="checkbox" id="cadillac-vistiq" name="cadillac-vistiq" value="cadillac-vistiq"></div>
+        </div>
+
+               <div class="brand-section">
+            <div class="brand-title">Ford</div>
+            <div class="checkbox-item"><label for="ford-model-t">Ford Model T</label><input type="checkbox" id="ford-model-t" name="ford-model-t" value="ford-model-t"></div>
+            <div class="checkbox-item"><label for="ford-mustang">Ford Mustang</label><input type="checkbox" id="ford-mustang" name="ford-mustang" value="ford-mustang"></div>
+            <div class="checkbox-item"><label for="ford-fiesta">Ford Fiesta</label><input type="checkbox" id="ford-fiesta" name="ford-fiesta" value="ford-fiesta"></div>
+            <div class="checkbox-item"><label for="ford-focus">Ford Focus</label><input type="checkbox" id="ford-focus" name="ford-focus" value="ford-focus"></div>
+            <div class="checkbox-item"><label for="ford-mondeo">Ford Mondeo</label><input type="checkbox" id="ford-mondeo" name="ford-mondeo" value="ford-mondeo"></div>
+            <div class="checkbox-item"><label for="ford-fusion">Ford Fusion</label><input type="checkbox" id="ford-fusion" name="ford-fusion" value="ford-fusion"></div>
+            <div class="checkbox-item"><label for="ford-taurus">Ford Taurus</label><input type="checkbox" id="ford-taurus" name="ford-taurus" value="ford-taurus"></div>
+            <div class="checkbox-item"><label for="ford-crown-vic">Ford Crown Victoria</label><input type="checkbox" id="ford-crown-vic" name="ford-crown-vic" value="ford-crown-vic"></div>
+            <div class="checkbox-item"><label for="ford-escort">Ford Escort</label><input type="checkbox" id="ford-escort" name="ford-escort" value="ford-escort"></div>
+            <div class="checkbox-item"><label for="ford-sierra">Ford Sierra</label><input type="checkbox" id="ford-sierra" name="ford-sierra" value="ford-sierra"></div>
+            <div class="checkbox-item"><label for="ford-puma">Ford Puma</label><input type="checkbox" id="ford-puma" name="ford-puma" value="ford-puma"></div>
+            <div class="checkbox-item"><label for="ford-kuga">Ford Kuga</label><input type="checkbox" id="ford-kuga" name="ford-kuga" value="ford-kuga"></div>
+            <div class="checkbox-item"><label for="ford-escape">Ford Escape</label><input type="checkbox" id="ford-escape" name="ford-escape" value="ford-escape"></div>
+            <div class="checkbox-item"><label for="ford-edge">Ford Edge</label><input type="checkbox" id="ford-edge" name="ford-edge" value="ford-edge"></div>
+            <div class="checkbox-item"><label for="ford-explorer">Ford Explorer</label><input type="checkbox" id="ford-explorer" name="ford-explorer" value="ford-explorer"></div>
+            <div class="checkbox-item"><label for="ford-expedition">Ford Expedition</label><input type="checkbox" id="ford-expedition" name="ford-expedition" value="ford-expedition"></div>
+            <div class="checkbox-item"><label for="ford-f150">Ford F-150</label><input type="checkbox" id="ford-f150" name="ford-f150" value="ford-f150"></div>
+            <div class="checkbox-item"><label for="ford-ranger">Ford Ranger</label><input type="checkbox" id="ford-ranger" name="ford-ranger" value="ford-ranger"></div>
+            <div class="checkbox-item"><label for="ford-maverick">Ford Maverick</label><input type="checkbox" id="ford-maverick" name="ford-maverick" value="ford-maverick"></div>
+            <div class="checkbox-item"><label for="ford-bronco">Ford Bronco</label><input type="checkbox" id="ford-bronco" name="ford-bronco" value="ford-bronco"></div>
+            <div class="checkbox-item"><label for="ford-gt">Ford GT</label><input type="checkbox" id="ford-gt" name="ford-gt" value="ford-gt"></div>
+            <div class="checkbox-item"><label for="ford-mach-e">Ford Mustang Mach-E</label><input type="checkbox" id="ford-mach-e" name="ford-mach-e" value="ford-mach-e"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Lincoln</div>
+            <div class="checkbox-item"><label for="lincoln-continental">Lincoln Continental</label><input type="checkbox" id="lincoln-continental" name="lincoln-continental" value="lincoln-continental"></div>
+            <div class="checkbox-item"><label for="lincoln-town-car">Lincoln Town Car</label><input type="checkbox" id="lincoln-town-car" name="lincoln-town-car" value="lincoln-town-car"></div>
+            <div class="checkbox-item"><label for="lincoln-mkz">Lincoln MKZ</label><input type="checkbox" id="lincoln-mkz" name="lincoln-mkz" value="lincoln-mkz"></div>
+            <div class="checkbox-item"><label for="lincoln-mkx">Lincoln MKX</label><input type="checkbox" id="lincoln-mkx" name="lincoln-mkx" value="lincoln-mkx"></div>
+            <div class="checkbox-item"><label for="lincoln-corsair">Lincoln Corsair</label><input type="checkbox" id="lincoln-corsair" name="lincoln-corsair" value="lincoln-corsair"></div>
+            <div class="checkbox-item"><label for="lincoln-nautilus">Lincoln Nautilus</label><input type="checkbox" id="lincoln-nautilus" name="lincoln-nautilus" value="lincoln-nautilus"></div>
+            <div class="checkbox-item"><label for="lincoln-aviator">Lincoln Aviator</label><input type="checkbox" id="lincoln-aviator" name="lincoln-aviator" value="lincoln-aviator"></div>
+            <div class="checkbox-item"><label for="lincoln-navigator">Lincoln Navigator</label><input type="checkbox" id="lincoln-navigator" name="lincoln-navigator" value="lincoln-navigator"></div>
+        </div>
+
+              <div class="brand-section">
+            <div class="brand-title">Honda</div>
+            <div class="checkbox-item"><label for="honda-civic">Honda Civic</label><input type="checkbox" id="honda-civic" name="honda-civic" value="honda-civic"></div>
+            <div class="checkbox-item"><label for="honda-accord">Honda Accord</label><input type="checkbox" id="honda-accord" name="honda-accord" value="honda-accord"></div>
+            <div class="checkbox-item"><label for="honda-insight">Honda Insight</label><input type="checkbox" id="honda-insight" name="honda-insight" value="honda-insight"></div>
+            <div class="checkbox-item"><label for="honda-prelude">Honda Prelude</label><input type="checkbox" id="honda-prelude" name="honda-prelude" value="honda-prelude"></div>
+            <div class="checkbox-item"><label for="honda-s2000">Honda S2000</label><input type="checkbox" id="honda-s2000" name="honda-s2000" value="honda-s2000"></div>
+            <div class="checkbox-item"><label for="honda-nsx">Honda NSX</label><input type="checkbox" id="honda-nsx" name="honda-nsx" value="honda-nsx"></div>
+            <div class="checkbox-item"><label for="honda-crx">Honda CR-X</label><input type="checkbox" id="honda-crx" name="honda-crx" value="honda-crx"></div>
+            <div class="checkbox-item"><label for="honda-jazz">Honda Jazz</label><input type="checkbox" id="honda-jazz" name="honda-jazz" value="honda-jazz"></div>
+            <div class="checkbox-item"><label for="honda-fit">Honda Fit</label><input type="checkbox" id="honda-fit" name="honda-fit" value="honda-fit"></div>
+            <div class="checkbox-item"><label for="honda-city">Honda City</label><input type="checkbox" id="honda-city" name="honda-city" value="honda-city"></div>
+            <div class="checkbox-item"><label for="honda-hrv">Honda HR-V</label><input type="checkbox" id="honda-hrv" name="honda-hrv" value="honda-hrv"></div>
+            <div class="checkbox-item"><label for="honda-zrv">Honda ZR-V</label><input type="checkbox" id="honda-zrv" name="honda-zrv" value="honda-zrv"></div>
+            <div class="checkbox-item"><label for="honda-crv">Honda CR-V</label><input type="checkbox" id="honda-crv" name="honda-crv" value="honda-crv"></div>
+            <div class="checkbox-item"><label for="honda-passport">Honda Passport</label><input type="checkbox" id="honda-passport" name="honda-passport" value="honda-passport"></div>
+            <div class="checkbox-item"><label for="honda-pilot">Honda Pilot</label><input type="checkbox" id="honda-pilot" name="honda-pilot" value="honda-pilot"></div>
+            <div class="checkbox-item"><label for="honda-ridgeline">Honda Ridgeline</label><input type="checkbox" id="honda-ridgeline" name="honda-ridgeline" value="honda-ridgeline"></div>
+            <div class="checkbox-item"><label for="honda-odyssey">Honda Odyssey</label><input type="checkbox" id="honda-odyssey" name="honda-odyssey" value="honda-odyssey"></div>
+            <div class="checkbox-item"><label for="honda-legend">Honda Legend</label><input type="checkbox" id="honda-legend" name="honda-legend" value="honda-legend"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Acura</div>
+            <div class="checkbox-item"><label for="acura-integra">Acura Integra</label><input type="checkbox" id="acura-integra" name="acura-integra" value="acura-integra"></div>
+            <div class="checkbox-item"><label for="acura-tlx">Acura TLX</label><input type="checkbox" id="acura-tlx" name="acura-tlx" value="acura-tlx"></div>
+            <div class="checkbox-item"><label for="acura-rlx">Acura RLX</label><input type="checkbox" id="acura-rlx" name="acura-rlx" value="acura-rlx"></div>
+            <div class="checkbox-item"><label for="acura-legend">Acura Legend</label><input type="checkbox" id="acura-legend" name="acura-legend" value="acura-legend"></div>
+            <div class="checkbox-item"><label for="acura-rsx">Acura RSX</label><input type="checkbox" id="acura-rsx" name="acura-rsx" value="acura-rsx"></div>
+            <div class="checkbox-item"><label for="acura-zdx">Acura ZDX</label><input type="checkbox" id="acura-zdx" name="acura-zdx" value="acura-zdx"></div>
+            <div class="checkbox-item"><label for="acura-rdx">Acura RDX</label><input type="checkbox" id="acura-rdx" name="acura-rdx" value="acura-rdx"></div>
+            <div class="checkbox-item"><label for="acura-mdx">Acura MDX</label><input type="checkbox" id="acura-mdx" name="acura-mdx" value="acura-mdx"></div>
+            <div class="checkbox-item"><label for="acura-nsx">Acura NSX</label><input type="checkbox" id="acura-nsx" name="acura-nsx" value="acura-nsx"></div>
+            <div class="checkbox-item"><label for="acura-adx">Acura ADX</label><input type="checkbox" id="acura-adx" name="acura-adx" value="acura-adx"></div>
+        </div>
+        
+             <div class="brand-section">
+            <div class="brand-title">BMW</div>
+            <div class="checkbox-item"><label for="bmw-1series">BMW 1 Series</label><input type="checkbox" id="bmw-1series" name="bmw-1series" value="bmw-1series"></div>
+            <div class="checkbox-item"><label for="bmw-2series">BMW 2 Series</label><input type="checkbox" id="bmw-2series" name="bmw-2series" value="bmw-2series"></div>
+            <div class="checkbox-item"><label for="bmw-3series">BMW 3 Series</label><input type="checkbox" id="bmw-3series" name="bmw-3series" value="bmw-3series"></div>
+            <div class="checkbox-item"><label for="bmw-4series">BMW 4 Series</label><input type="checkbox" id="bmw-4series" name="bmw-4series" value="bmw-4series"></div>
+            <div class="checkbox-item"><label for="bmw-5series">BMW 5 Series</label><input type="checkbox" id="bmw-5series" name="bmw-5series" value="bmw-5series"></div>
+            <div class="checkbox-item"><label for="bmw-6series">BMW 6 Series</label><input type="checkbox" id="bmw-6series" name="bmw-6series" value="bmw-6series"></div>
+            <div class="checkbox-item"><label for="bmw-7series">BMW 7 Series</label><input type="checkbox" id="bmw-7series" name="bmw-7series" value="bmw-7series"></div>
+            <div class="checkbox-item"><label for="bmw-8series">BMW 8 Series</label><input type="checkbox" id="bmw-8series" name="bmw-8series" value="bmw-8series"></div>
+            <div class="checkbox-item"><label for="bmw-x1">BMW X1</label><input type="checkbox" id="bmw-x1" name="bmw-x1" value="bmw-x1"></div>
+            <div class="checkbox-item"><label for="bmw-x3">BMW X3</label><input type="checkbox" id="bmw-x3" name="bmw-x3" value="bmw-x3"></div>
+            <div class="checkbox-item"><label for="bmw-x5">BMW X5</label><input type="checkbox" id="bmw-x5" name="bmw-x5" value="bmw-x5"></div>
+            <div class="checkbox-item"><label for="bmw-x6">BMW X6</label><input type="checkbox" id="bmw-x6" name="bmw-x6" value="bmw-x6"></div>
+            <div class="checkbox-item"><label for="bmw-x7">BMW X7</label><input type="checkbox" id="bmw-x7" name="bmw-x7" value="bmw-x7"></div>
+            <div class="checkbox-item"><label for="bmw-xm">BMW XM</label><input type="checkbox" id="bmw-xm" name="bmw-xm" value="bmw-xm"></div>
+            <div class="checkbox-item"><label for="bmw-z4">BMW Z4</label><input type="checkbox" id="bmw-z4" name="bmw-z4" value="bmw-z4"></div>
+            <div class="checkbox-item"><label for="bmw-i4">BMW i4</label><input type="checkbox" id="bmw-i4" name="bmw-i4" value="bmw-i4"></div>
+            <div class="checkbox-item"><label for="bmw-i7">BMW i7</label><input type="checkbox" id="bmw-i7" name="bmw-i7" value="bmw-i7"></div>
+            <div class="checkbox-item"><label for="bmw-ix">BMW iX</label><input type="checkbox" id="bmw-ix" name="bmw-ix" value="bmw-ix"></div>
+            <div class="checkbox-item"><label for="bmw-m2">BMW M2</label><input type="checkbox" id="bmw-m2" name="bmw-m2" value="bmw-m2"></div>
+            <div class="checkbox-item"><label for="bmw-m3">BMW M3</label><input type="checkbox" id="bmw-m3" name="bmw-m3" value="bmw-m3"></div>
+            <div class="checkbox-item"><label for="bmw-m4">BMW M4</label><input type="checkbox" id="bmw-m4" name="bmw-m4" value="bmw-m4"></div>
+            <div class="checkbox-item"><label for="bmw-m5">BMW M5</label><input type="checkbox" id="bmw-m5" name="bmw-m5" value="bmw-m5"></div>
+            <div class="checkbox-item"><label for="bmw-m8">BMW M8</label><input type="checkbox" id="bmw-m8" name="bmw-m8" value="bmw-m8"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Mini</div>
+            <div class="checkbox-item"><label for="mini-cooper">Mini Cooper</label><input type="checkbox" id="mini-cooper" name="mini-cooper" value="mini-cooper"></div>
+            <div class="checkbox-item"><label for="mini-one">Mini One</label><input type="checkbox" id="mini-one" name="mini-one" value="mini-one"></div>
+            <div class="checkbox-item"><label for="mini-clubman">Mini Clubman</label><input type="checkbox" id="mini-clubman" name="mini-clubman" value="mini-clubman"></div>
+            <div class="checkbox-item"><label for="mini-countryman">Mini Countryman</label><input type="checkbox" id="mini-countryman" name="mini-countryman" value="mini-countryman"></div>
+            <div class="checkbox-item"><label for="mini-paceman">Mini Paceman</label><input type="checkbox" id="mini-paceman" name="mini-paceman" value="mini-paceman"></div>
+            <div class="checkbox-item"><label for="mini-aceman">Mini Aceman</label><input type="checkbox" id="mini-aceman" name="mini-aceman" value="mini-aceman"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Rolls-Royce</div>
+            <div class="checkbox-item"><label for="rr-silver-ghost">Rolls-Royce Silver Ghost</label><input type="checkbox" id="rr-silver-ghost" name="rr-silver-ghost" value="rr-silver-ghost"></div>
+            <div class="checkbox-item"><label for="rr-phantom">Rolls-Royce Phantom</label><input type="checkbox" id="rr-phantom" name="rr-phantom" value="rr-phantom"></div>
+            <div class="checkbox-item"><label for="rr-silver-cloud">Rolls-Royce Silver Cloud</label><input type="checkbox" id="rr-silver-cloud" name="rr-silver-cloud" value="rr-silver-cloud"></div>
+            <div class="checkbox-item"><label for="rr-silver-shadow">Rolls-Royce Silver Shadow</label><input type="checkbox" id="rr-silver-shadow" name="rr-silver-shadow" value="rr-silver-shadow"></div>
+            <div class="checkbox-item"><label for="rr-corniche">Rolls-Royce Corniche</label><input type="checkbox" id="rr-corniche" name="rr-corniche" value="rr-corniche"></div>
+            <div class="checkbox-item"><label for="rr-ghost">Rolls-Royce Ghost</label><input type="checkbox" id="rr-ghost" name="rr-ghost" value="rr-ghost"></div>
+            <div class="checkbox-item"><label for="rr-wraith">Rolls-Royce Wraith</label><input type="checkbox" id="rr-wraith" name="rr-wraith" value="rr-wraith"></div>
+            <div class="checkbox-item"><label for="rr-dawn">Rolls-Royce Dawn</label><input type="checkbox" id="rr-dawn" name="rr-dawn" value="rr-dawn"></div>
+            <div class="checkbox-item"><label for="rr-cullinan">Rolls-Royce Cullinan</label><input type="checkbox" id="rr-cullinan" name="rr-cullinan" value="rr-cullinan"></div>
+            <div class="checkbox-item"><label for="rr-spectre">Rolls-Royce Spectre</label><input type="checkbox" id="rr-spectre" name="rr-spectre" value="rr-spectre"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Alpina</div>
+            <div class="checkbox-item"><label for="alpina-b3">Alpina B3</label><input type="checkbox" id="alpina-b3" name="alpina-b3" value="alpina-b3"></div>
+            <div class="checkbox-item"><label for="alpina-b4">Alpina B4</label><input type="checkbox" id="alpina-b4" name="alpina-b4" value="alpina-b4"></div>
+            <div class="checkbox-item"><label for="alpina-b5">Alpina B5</label><input type="checkbox" id="alpina-b5" name="alpina-b5" value="alpina-b5"></div>
+            <div class="checkbox-item"><label for="alpina-b7">Alpina B7</label><input type="checkbox" id="alpina-b7" name="alpina-b7" value="alpina-b7"></div>
+            <div class="checkbox-item"><label for="alpina-b8">Alpina B8</label><input type="checkbox" id="alpina-b8" name="alpina-b8" value="alpina-b8"></div>
+            <div class="checkbox-item"><label for="alpina-xb7">Alpina XB7</label><input type="checkbox" id="alpina-xb7" name="alpina-xb7" value="alpina-xb7"></div>
+        </div> 
+        
+         <div class="brand-section">
+            <div class="brand-title">Volvo</div>
+            <div class="checkbox-item"><label for="volvo-p1800">Volvo P1800</label><input type="checkbox" id="volvo-p1800" name="volvo-p1800" value="volvo-p1800"></div>
+            <div class="checkbox-item"><label for="volvo-240">Volvo 240</label><input type="checkbox" id="volvo-240" name="volvo-240" value="volvo-240"></div>
+            <div class="checkbox-item"><label for="volvo-850">Volvo 850</label><input type="checkbox" id="volvo-850" name="volvo-850" value="volvo-850"></div>
+            <div class="checkbox-item"><label for="volvo-s60">Volvo S60</label><input type="checkbox" id="volvo-s60" name="volvo-s60" value="volvo-s60"></div>
+            <div class="checkbox-item"><label for="volvo-v60">Volvo V60</label><input type="checkbox" id="volvo-v60" name="volvo-v60" value="volvo-v60"></div>
+            <div class="checkbox-item"><label for="volvo-s90">Volvo S90</label><input type="checkbox" id="volvo-s90" name="volvo-s90" value="volvo-s90"></div>
+            <div class="checkbox-item"><label for="volvo-v90">Volvo V90</label><input type="checkbox" id="volvo-v90" name="volvo-v90" value="volvo-v90"></div>
+            <div class="checkbox-item"><label for="volvo-xc40">Volvo XC40</label><input type="checkbox" id="volvo-xc40" name="volvo-xc40" value="volvo-xc40"></div>
+            <div class="checkbox-item"><label for="volvo-xc60">Volvo XC60</label><input type="checkbox" id="volvo-xc60" name="volvo-xc60" value="volvo-xc60"></div>
+            <div class="checkbox-item"><label for="volvo-xc90">Volvo XC90</label><input type="checkbox" id="volvo-xc90" name="volvo-xc90" value="volvo-xc90"></div>
+            <div class="checkbox-item"><label for="volvo-ex30">Volvo EX30</label><input type="checkbox" id="volvo-ex30" name="volvo-ex30" value="volvo-ex30"></div>
+            <div class="checkbox-item"><label for="volvo-ex90">Volvo EX90</label><input type="checkbox" id="volvo-ex90" name="volvo-ex90" value="volvo-ex90"></div>
+            <div class="checkbox-item"><label for="volvo-ec40">Volvo EC40</label><input type="checkbox" id="volvo-ec40" name="volvo-ec40" value="volvo-ec40"></div>
+            <div class="checkbox-item"><label for="volvo-em90">Volvo EM90</label><input type="checkbox" id="volvo-em90" name="volvo-em90" value="volvo-em90"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Polestar</div>
+            <div class="checkbox-item"><label for="polestar-1">Polestar 1</label><input type="checkbox" id="polestar-1" name="polestar-1" value="polestar-1"></div>
+            <div class="checkbox-item"><label for="polestar-2">Polestar 2</label><input type="checkbox" id="polestar-2" name="polestar-2" value="polestar-2"></div>
+            <div class="checkbox-item"><label for="polestar-3">Polestar 3</label><input type="checkbox" id="polestar-3" name="polestar-3" value="polestar-3"></div>
+            <div class="checkbox-item"><label for="polestar-4">Polestar 4</label><input type="checkbox" id="polestar-4" name="polestar-4" value="polestar-4"></div>
+            <div class="checkbox-item"><label for="polestar-5">Polestar 5</label><input type="checkbox" id="polestar-5" name="polestar-5" value="polestar-5"></div>
+            <div class="checkbox-item"><label for="polestar-6">Polestar 6</label><input type="checkbox" id="polestar-6" name="polestar-6" value="polestar-6"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Lotus</div>
+            <div class="checkbox-item"><label for="lotus-seven">Lotus Seven</label><input type="checkbox" id="lotus-seven" name="lotus-seven" value="lotus-seven"></div>
+            <div class="checkbox-item"><label for="lotus-esprit">Lotus Esprit</label><input type="checkbox" id="lotus-esprit" name="lotus-esprit" value="lotus-esprit"></div>
+            <div class="checkbox-item"><label for="lotus-elise">Lotus Elise</label><input type="checkbox" id="lotus-elise" name="lotus-elise" value="lotus-elise"></div>
+            <div class="checkbox-item"><label for="lotus-exige">Lotus Exige</label><input type="checkbox" id="lotus-exige" name="lotus-exige" value="lotus-exige"></div>
+            <div class="checkbox-item"><label for="lotus-evora">Lotus Evora</label><input type="checkbox" id="lotus-evora" name="lotus-evora" value="lotus-evora"></div>
+            <div class="checkbox-item"><label for="lotus-emira">Lotus Emira</label><input type="checkbox" id="lotus-emira" name="lotus-emira" value="lotus-emira"></div>
+            <div class="checkbox-item"><label for="lotus-evija">Lotus Evija</label><input type="checkbox" id="lotus-evija" name="lotus-evija" value="lotus-evija"></div>
+            <div class="checkbox-item"><label for="lotus-eletre">Lotus Eletre</label><input type="checkbox" id="lotus-eletre" name="lotus-eletre" value="lotus-eletre"></div>
+            <div class="checkbox-item"><label for="lotus-emeya">Lotus Emeya</label><input type="checkbox" id="lotus-emeya" name="lotus-emeya" value="lotus-emeya"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Lynk & Co</div>
+            <div class="checkbox-item"><label for="lynk-co-01">Lynk & Co 01</label><input type="checkbox" id="lynk-co-01" name="lynk-co-01" value="lynk-co-01"></div>
+            <div class="checkbox-item"><label for="lynk-co-02">Lynk & Co 02</label><input type="checkbox" id="lynk-co-02" name="lynk-co-02" value="lynk-co-02"></div>
+            <div class="checkbox-item"><label for="lynk-co-03">Lynk & Co 03</label><input type="checkbox" id="lynk-co-03" name="lynk-co-03" value="lynk-co-03"></div>
+            <div class="checkbox-item"><label for="lynk-co-05">Lynk & Co 05</label><input type="checkbox" id="lynk-co-05" name="lynk-co-05" value="lynk-co-05"></div>
+            <div class="checkbox-item"><label for="lynk-co-06">Lynk & Co 06</label><input type="checkbox" id="lynk-co-06" name="lynk-co-06" value="lynk-co-06"></div>
+            <div class="checkbox-item"><label for="lynk-co-08">Lynk & Co 08</label><input type="checkbox" id="lynk-co-08" name="lynk-co-08" value="lynk-co-08"></div>
+            <div class="checkbox-item"><label for="lynk-co-09">Lynk & Co 09</label><input type="checkbox" id="lynk-co-09" name="lynk-co-09" value="lynk-co-09"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Zeekr</div>
+            <div class="checkbox-item"><label for="zeekr-001">Zeekr 001</label><input type="checkbox" id="zeekr-001" name="zeekr-001" value="zeekr-001"></div>
+            <div class="checkbox-item"><label for="zeekr-007">Zeekr 007</label><input type="checkbox" id="zeekr-007" name="zeekr-007" value="zeekr-007"></div>
+            <div class="checkbox-item"><label for="zeekr-009">Zeekr 009</label><input type="checkbox" id="zeekr-009" name="zeekr-009" value="zeekr-009"></div>
+            <div class="checkbox-item"><label for="zeekr-x">Zeekr X</label><input type="checkbox" id="zeekr-x" name="zeekr-x" value="zeekr-x"></div>
+            <div class="checkbox-item"><label for="zeekr-mix">Zeekr Mix</label><input type="checkbox" id="zeekr-mix" name="zeekr-mix" value="zeekr-mix"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Geometry</div>
+            <div class="checkbox-item"><label for="geometry-a">Geometry A</label><input type="checkbox" id="geometry-a" name="geometry-a" value="geometry-a"></div>
+            <div class="checkbox-item"><label for="geometry-c">Geometry C</label><input type="checkbox" id="geometry-c" name="geometry-c" value="geometry-c"></div>
+            <div class="checkbox-item"><label for="geometry-e">Geometry E</label><input type="checkbox" id="geometry-e" name="geometry-e" value="geometry-e"></div>
+            <div class="checkbox-item"><label for="geometry-g6">Geometry G6</label><input type="checkbox" id="geometry-g6" name="geometry-g6" value="geometry-g6"></div>
+            <div class="checkbox-item"><label for="geometry-m6">Geometry M6</label><input type="checkbox" id="geometry-m6" name="geometry-m6" value="geometry-m6"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Proton</div>
+            <div class="checkbox-item"><label for="proton-saga">Proton Saga</label><input type="checkbox" id="proton-saga" name="proton-saga" value="proton-saga"></div>
+            <div class="checkbox-item"><label for="proton-wira">Proton Wira</label><input type="checkbox" id="proton-wira" name="proton-wira" value="proton-wira"></div>
+            <div class="checkbox-item"><label for="proton-perdana">Proton Perdana</label><input type="checkbox" id="proton-perdana" name="proton-perdana" value="proton-perdana"></div>
+            <div class="checkbox-item"><label for="proton-persona">Proton Persona</label><input type="checkbox" id="proton-persona" name="proton-persona" value="proton-persona"></div>
+            <div class="checkbox-item"><label for="proton-exora">Proton Exora</label><input type="checkbox" id="proton-exora" name="proton-exora" value="proton-exora"></div>
+            <div class="checkbox-item"><label for="proton-iriz">Proton Iriz</label><input type="checkbox" id="proton-iriz" name="proton-iriz" value="proton-iriz"></div>
+            <div class="checkbox-item"><label for="proton-x50">Proton X50</label><input type="checkbox" id="proton-x50" name="proton-x50" value="proton-x50"></div>
+            <div class="checkbox-item"><label for="proton-x70">Proton X70</label><input type="checkbox" id="proton-x70" name="proton-x70" value="proton-x70"></div>
+            <div class="checkbox-item"><label for="proton-x90">Proton X90</label><input type="checkbox" id="proton-x90" name="proton-x90" value="proton-x90"></div>
+            <div class="checkbox-item"><label for="proton-s70">Proton S70</label><input type="checkbox" id="proton-s70" name="proton-s70" value="proton-s70"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Jaguar</div>
+            <div class="checkbox-item"><label for="jaguar-e-type">Jaguar E-Type</label><input type="checkbox" id="jaguar-e-type" name="jaguar-e-type" value="jaguar-e-type"></div>
+            <div class="checkbox-item"><label for="jaguar-xj">Jaguar XJ</label><input type="checkbox" id="jaguar-xj" name="jaguar-xj" value="jaguar-xj"></div>
+            <div class="checkbox-item"><label for="jaguar-xjs">Jaguar XJS</label><input type="checkbox" id="jaguar-xjs" name="jaguar-xjs" value="jaguar-xjs"></div>
+            <div class="checkbox-item"><label for="jaguar-xj220">Jaguar XJ220</label><input type="checkbox" id="jaguar-xj220" name="jaguar-xj220" value="jaguar-xj220"></div>
+            <div class="checkbox-item"><label for="jaguar-xk8">Jaguar XK8</label><input type="checkbox" id="jaguar-xk8" name="jaguar-xk8" value="jaguar-xk8"></div>
+            <div class="checkbox-item"><label for="jaguar-xk">Jaguar XK</label><input type="checkbox" id="jaguar-xk" name="jaguar-xk" value="jaguar-xk"></div>
+            <div class="checkbox-item"><label for="jaguar-xf">Jaguar XF</label><input type="checkbox" id="jaguar-xf" name="jaguar-xf" value="jaguar-xf"></div>
+            <div class="checkbox-item"><label for="jaguar-xe">Jaguar XE</label><input type="checkbox" id="jaguar-xe" name="jaguar-xe" value="jaguar-xe"></div>
+            <div class="checkbox-item"><label for="jaguar-f-type">Jaguar F-Type</label><input type="checkbox" id="jaguar-f-type" name="jaguar-f-type" value="jaguar-f-type"></div>
+            <div class="checkbox-item"><label for="jaguar-f-pace">Jaguar F-Pace</label><input type="checkbox" id="jaguar-f-pace" name="jaguar-f-pace" value="jaguar-f-pace"></div>
+            <div class="checkbox-item"><label for="jaguar-e-pace">Jaguar E-Pace</label><input type="checkbox" id="jaguar-e-pace" name="jaguar-e-pace" value="jaguar-e-pace"></div>
+            <div class="checkbox-item"><label for="jaguar-i-pace">Jaguar I-Pace</label><input type="checkbox" id="jaguar-i-pace" name="jaguar-i-pace" value="jaguar-i-pace"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Land Rover</div>
+            <div class="checkbox-item"><label for="lr-defender-classic">Land Rover Defender (Classic)</label><input type="checkbox" id="lr-defender-classic" name="lr-defender-classic" value="lr-defender-classic"></div>
+            <div class="checkbox-item"><label for="lr-defender-modern">Land Rover Defender (Modern)</label><input type="checkbox" id="lr-defender-modern" name="lr-defender-modern" value="lr-defender-modern"></div>
+            <div class="checkbox-item"><label for="lr-discovery">Land Rover Discovery</label><input type="checkbox" id="lr-discovery" name="lr-discovery" value="lr-discovery"></div>
+            <div class="checkbox-item"><label for="lr-discovery-sport">Land Rover Discovery Sport</label><input type="checkbox" id="lr-discovery-sport" name="lr-discovery-sport" value="lr-discovery-sport"></div>
+            <div class="checkbox-item"><label for="lr-freelander">Land Rover Freelander</label><input type="checkbox" id="lr-freelander" name="lr-freelander" value="lr-freelander"></div>
+            <div class="checkbox-item"><label for="lr-range-rover">Range Rover</label><input type="checkbox" id="lr-range-rover" name="lr-range-rover" value="lr-range-rover"></div>
+            <div class="checkbox-item"><label for="lr-rr-sport">Range Rover Sport</label><input type="checkbox" id="lr-rr-sport" name="lr-rr-sport" value="lr-rr-sport"></div>
+            <div class="checkbox-item"><label for="lr-rr-evoque">Range Rover Evoque</label><input type="checkbox" id="lr-rr-evoque" name="lr-rr-evoque" value="lr-rr-evoque"></div>
+            <div class="checkbox-item"><label for="lr-rr-velar">Range Rover Velar</label><input type="checkbox" id="lr-rr-velar" name="lr-rr-velar" value="lr-rr-velar"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Tata</div>
+            <div class="checkbox-item"><label for="tata-sumo">Tata Sumo</label><input type="checkbox" id="tata-sumo" name="tata-sumo" value="tata-sumo"></div>
+            <div class="checkbox-item"><label for="tata-indica">Tata Indica</label><input type="checkbox" id="tata-indica" name="tata-indica" value="tata-indica"></div>
+            <div class="checkbox-item"><label for="tata-safari">Tata Safari</label><input type="checkbox" id="tata-safari" name="tata-safari" value="tata-safari"></div>
+            <div class="checkbox-item"><label for="tata-nano">Tata Nano</label><input type="checkbox" id="tata-nano" name="tata-nano" value="tata-nano"></div>
+            <div class="checkbox-item"><label for="tata-tiago">Tata Tiago</label><input type="checkbox" id="tata-tiago" name="tata-tiago" value="tata-tiago"></div>
+            <div class="checkbox-item"><label for="tata-tigor">Tata Tigor</label><input type="checkbox" id="tata-tigor" name="tata-tigor" value="tata-tigor"></div>
+            <div class="checkbox-item"><label for="tata-nexon">Tata Nexon</label><input type="checkbox" id="tata-nexon" name="tata-nexon" value="tata-nexon"></div>
+            <div class="checkbox-item"><label for="tata-harrier">Tata Harrier</label><input type="checkbox" id="tata-harrier" name="tata-harrier" value="tata-harrier"></div>
+            <div class="checkbox-item"><label for="tata-altroz">Tata Altroz</label><input type="checkbox" id="tata-altroz" name="tata-altroz" value="tata-altroz"></div>
+            <div class="checkbox-item"><label for="tata-punch">Tata Punch</label><input type="checkbox" id="tata-punch" name="tata-punch" value="tata-punch"></div>
+            <div class="checkbox-item"><label for="tata-curvv">Tata Curvv</label><input type="checkbox" id="tata-curvv" name="tata-curvv" value="tata-curvv"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Tesla</div>
+            <div class="checkbox-item"><label for="tesla-roadster">Tesla Roadster</label><input type="checkbox" id="tesla-roadster" name="tesla-roadster" value="tesla-roadster"></div>
+            <div class="checkbox-item"><label for="tesla-models">Tesla Model S</label><input type="checkbox" id="tesla-models" name="tesla-models" value="tesla-models"></div>
+            <div class="checkbox-item"><label for="tesla-modelx">Tesla Model X</label><input type="checkbox" id="tesla-modelx" name="tesla-modelx" value="tesla-modelx"></div>
+            <div class="checkbox-item"><label for="tesla-model3">Tesla Model 3</label><input type="checkbox" id="tesla-model3" name="tesla-model3" value="tesla-model3"></div>
+            <div class="checkbox-item"><label for="tesla-modely">Tesla Model Y</label><input type="checkbox" id="tesla-modely" name="tesla-modely" value="tesla-modely"></div>
+            <div class="checkbox-item"><label for="tesla-cybertruck">Tesla Cybertruck</label><input type="checkbox" id="tesla-cybertruck" name="tesla-cybertruck" value="tesla-cybertruck"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Mazda</div>
+            <div class="checkbox-item"><label for="mazda-rx7">Mazda RX-7</label><input type="checkbox" id="mazda-rx7" name="mazda-rx7" value="mazda-rx7"></div>
+            <div class="checkbox-item"><label for="mazda-rx8">Mazda RX-8</label><input type="checkbox" id="mazda-rx8" name="mazda-rx8" value="mazda-rx8"></div>
+            <div class="checkbox-item"><label for="mazda-mx5">Mazda MX-5 Miata</label><input type="checkbox" id="mazda-mx5" name="mazda-mx5" value="mazda-mx5"></div>
+            <div class="checkbox-item"><label for="mazda-mazda2">Mazda2</label><input type="checkbox" id="mazda-mazda2" name="mazda-mazda2" value="mazda-mazda2"></div>
+            <div class="checkbox-item"><label for="mazda-mazda3">Mazda3</label><input type="checkbox" id="mazda-mazda3" name="mazda-mazda3" value="mazda-mazda3"></div>
+            <div class="checkbox-item"><label for="mazda-mazda6">Mazda6</label><input type="checkbox" id="mazda-mazda6" name="mazda-mazda6" value="mazda-mazda6"></div>
+            <div class="checkbox-item"><label for="mazda-cx3">Mazda CX-3</label><input type="checkbox" id="mazda-cx3" name="mazda-cx3" value="mazda-cx3"></div>
+            <div class="checkbox-item"><label for="mazda-cx30">Mazda CX-30</label><input type="checkbox" id="mazda-cx30" name="mazda-cx30" value="mazda-cx30"></div>
+            <div class="checkbox-item"><label for="mazda-cx5">Mazda CX-5</label><input type="checkbox" id="mazda-cx5" name="mazda-cx5" value="mazda-cx5"></div>
+            <div class="checkbox-item"><label for="mazda-cx50">Mazda CX-50</label><input type="checkbox" id="mazda-cx50" name="mazda-cx50" value="mazda-cx50"></div>
+            <div class="checkbox-item"><label for="mazda-cx60">Mazda CX-60</label><input type="checkbox" id="mazda-cx60" name="mazda-cx60" value="mazda-cx60"></div>
+            <div class="checkbox-item"><label for="mazda-cx90">Mazda CX-90</label><input type="checkbox" id="mazda-cx90" name="mazda-cx90" value="mazda-cx90"></div>
+            <div class="checkbox-item"><label for="mazda-bt50">Mazda BT-50</label><input type="checkbox" id="mazda-bt50" name="mazda-bt50" value="mazda-bt50"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Subaru</div>
+            <div class="checkbox-item"><label for="subaru-brat">Subaru Brat</label><input type="checkbox" id="subaru-brat" name="subaru-brat" value="subaru-brat"></div>
+            <div class="checkbox-item"><label for="subaru-legacy">Subaru Legacy</label><input type="checkbox" id="subaru-legacy" name="subaru-legacy" value="subaru-legacy"></div>
+            <div class="checkbox-item"><label for="subaru-impreza">Subaru Impreza</label><input type="checkbox" id="subaru-impreza" name="subaru-impreza" value="subaru-impreza"></div>
+            <div class="checkbox-item"><label for="subaru-outback">Subaru Outback</label><input type="checkbox" id="subaru-outback" name="subaru-outback" value="subaru-outback"></div>
+            <div class="checkbox-item"><label for="subaru-forester">Subaru Forester</label><input type="checkbox" id="subaru-forester" name="subaru-forester" value="subaru-forester"></div>
+            <div class="checkbox-item"><label for="subaru-brz">Subaru BRZ</label><input type="checkbox" id="subaru-brz" name="subaru-brz" value="subaru-brz"></div>
+            <div class="checkbox-item"><label for="subaru-crosstrek">Subaru Crosstrek</label><input type="checkbox" id="subaru-crosstrek" name="subaru-crosstrek" value="subaru-crosstrek"></div>
+            <div class="checkbox-item"><label for="subaru-levorg">Subaru Levorg</label><input type="checkbox" id="subaru-levorg" name="subaru-levorg" value="subaru-levorg"></div>
+            <div class="checkbox-item"><label for="subaru-ascent">Subaru Ascent</label><input type="checkbox" id="subaru-ascent" name="subaru-ascent" value="subaru-ascent"></div>
+            <div class="checkbox-item"><label for="subaru-solterra">Subaru Solterra</label><input type="checkbox" id="subaru-solterra" name="subaru-solterra" value="subaru-solterra"></div>
+            <div class="checkbox-item"><label for="subaru-wrx">Subaru WRX</label><input type="checkbox" id="subaru-wrx" name="subaru-wrx" value="subaru-wrx"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Suzuki</div>
+            <div class="checkbox-item"><label for="suzuki-jimny">Suzuki Jimny</label><input type="checkbox" id="suzuki-jimny" name="suzuki-jimny" value="suzuki-jimny"></div>
+            <div class="checkbox-item"><label for="suzuki-alto">Suzuki Alto</label><input type="checkbox" id="suzuki-alto" name="suzuki-alto" value="suzuki-alto"></div>
+            <div class="checkbox-item"><label for="suzuki-swift">Suzuki Swift</label><input type="checkbox" id="suzuki-swift" name="suzuki-swift" value="suzuki-swift"></div>
+            <div class="checkbox-item"><label for="suzuki-vitara">Suzuki Vitara</label><input type="checkbox" id="suzuki-vitara" name="suzuki-vitara" value="suzuki-vitara"></div>
+            <div class="checkbox-item"><label for="suzuki-baleno">Suzuki Baleno</label><input type="checkbox" id="suzuki-baleno" name="suzuki-baleno" value="suzuki-baleno"></div>
+            <div class="checkbox-item"><label for="suzuki-wagonr">Suzuki Wagon R</label><input type="checkbox" id="suzuki-wagonr" name="suzuki-wagonr" value="suzuki-wagonr"></div>
+            <div class="checkbox-item"><label for="suzuki-ignis">Suzuki Ignis</label><input type="checkbox" id="suzuki-ignis" name="suzuki-ignis" value="suzuki-ignis"></div>
+            <div class="checkbox-item"><label for="suzuki-grandvitara">Suzuki Grand Vitara</label><input type="checkbox" id="suzuki-grandvitara" name="suzuki-grandvitara" value="suzuki-grandvitara"></div>
+            <div class="checkbox-item"><label for="suzuki-scross">Suzuki S-Cross</label><input type="checkbox" id="suzuki-scross" name="suzuki-scross" value="suzuki-scross"></div>
+            <div class="checkbox-item"><label for="suzuki-celerio">Suzuki Celerio</label><input type="checkbox" id="suzuki-celerio" name="suzuki-celerio" value="suzuki-celerio"></div>
+        </div>
+
+       <div class="brand-section">
+            <div class="brand-title">Ferrari</div>
+            <div class="checkbox-item"><label for="ferrari-250gto">Ferrari 250 GTO</label><input type="checkbox" id="ferrari-250gto" name="ferrari-250gto" value="ferrari-250gto"></div>
+            <div class="checkbox-item"><label for="ferrari-testarossa">Ferrari Testarossa</label><input type="checkbox" id="ferrari-testarossa" name="ferrari-testarossa" value="ferrari-testarossa"></div>
+            <div class="checkbox-item"><label for="ferrari-f40">Ferrari F40</label><input type="checkbox" id="ferrari-f40" name="ferrari-f40" value="ferrari-f40"></div>
+            <div class="checkbox-item"><label for="ferrari-f50">Ferrari F50</label><input type="checkbox" id="ferrari-f50" name="ferrari-f50" value="ferrari-f50"></div>
+            <div class="checkbox-item"><label for="ferrari-enzo">Ferrari Enzo</label><input type="checkbox" id="ferrari-enzo" name="ferrari-enzo" value="ferrari-enzo"></div>
+            <div class="checkbox-item"><label for="ferrari-laferrari">Ferrari LaFerrari</label><input type="checkbox" id="ferrari-laferrari" name="ferrari-laferrari" value="ferrari-laferrari"></div>
+            <div class="checkbox-item"><label for="ferrari-458">Ferrari 458 Italia</label><input type="checkbox" id="ferrari-458" name="ferrari-458" value="ferrari-458"></div>
+            <div class="checkbox-item"><label for="ferrari-488">Ferrari 488 GTB</label><input type="checkbox" id="ferrari-488" name="ferrari-488" value="ferrari-488"></div>
+            <div class="checkbox-item"><label for="ferrari-f8">Ferrari F8 Tributo</label><input type="checkbox" id="ferrari-f8" name="ferrari-f8" value="ferrari-f8"></div>
+            <div class="checkbox-item"><label for="ferrari-296">Ferrari 296 GTB</label><input type="checkbox" id="ferrari-296" name="ferrari-296" value="ferrari-296"></div>
+            <div class="checkbox-item"><label for="ferrari-roma">Ferrari Roma</label><input type="checkbox" id="ferrari-roma" name="ferrari-roma" value="ferrari-roma"></div>
+            <div class="checkbox-item"><label for="ferrari-812">Ferrari 812 Superfast</label><input type="checkbox" id="ferrari-812" name="ferrari-812" value="ferrari-812"></div>
+            <div class="checkbox-item"><label for="ferrari-12cilindri">Ferrari 12Cilindri</label><input type="checkbox" id="ferrari-12cilindri" name="ferrari-12cilindri" value="ferrari-12cilindri"></div>
+            <div class="checkbox-item"><label for="ferrari-purosangue">Ferrari Purosangue</label><input type="checkbox" id="ferrari-purosangue" name="ferrari-purosangue" value="ferrari-purosangue"></div>
+            <div class="checkbox-item"><label for="ferrari-sf90">Ferrari SF90 Stradale</label><input type="checkbox" id="ferrari-sf90" name="ferrari-sf90" value="ferrari-sf90"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Aston Martin</div>
+            <div class="checkbox-item"><label for="aston-db5">Aston Martin DB5</label><input type="checkbox" id="aston-db5" name="aston-db5" value="aston-db5"></div>
+            <div class="checkbox-item"><label for="aston-vantage">Aston Martin Vantage</label><input type="checkbox" id="aston-vantage" name="aston-vantage" value="aston-vantage"></div>
+            <div class="checkbox-item"><label for="aston-vanquish">Aston Martin Vanquish</label><input type="checkbox" id="aston-vanquish" name="aston-vanquish" value="aston-vanquish"></div>
+            <div class="checkbox-item"><label for="aston-db9">Aston Martin DB9</label><input type="checkbox" id="aston-db9" name="aston-db9" value="aston-db9"></div>
+            <div class="checkbox-item"><label for="aston-dbs">Aston Martin DBS</label><input type="checkbox" id="aston-dbs" name="aston-dbs" value="aston-dbs"></div>
+            <div class="checkbox-item"><label for="aston-rapide">Aston Martin Rapide</label><input type="checkbox" id="aston-rapide" name="aston-rapide" value="aston-rapide"></div>
+            <div class="checkbox-item"><label for="aston-one77">Aston Martin One-77</label><input type="checkbox" id="aston-one77" name="aston-one77" value="aston-one77"></div>
+            <div class="checkbox-item"><label for="aston-db11">Aston Martin DB11</label><input type="checkbox" id="aston-db11" name="aston-db11" value="aston-db11"></div>
+            <div class="checkbox-item"><label for="aston-dbx">Aston Martin DBX</label><input type="checkbox" id="aston-dbx" name="aston-dbx" value="aston-dbx"></div>
+            <div class="checkbox-item"><label for="aston-valkyrie">Aston Martin Valkyrie</label><input type="checkbox" id="aston-valkyrie" name="aston-valkyrie" value="aston-valkyrie"></div>
+            <div class="checkbox-item"><label for="aston-db12">Aston Martin DB12</label><input type="checkbox" id="aston-db12" name="aston-db12" value="aston-db12"></div>
+            <div class="checkbox-item"><label for="aston-valour">Aston Martin Valour</label><input type="checkbox" id="aston-valour" name="aston-valour" value="aston-valour"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">McLaren</div>
+            <div class="checkbox-item"><label for="mclaren-f1">McLaren F1</label><input type="checkbox" id="mclaren-f1" name="mclaren-f1" value="mclaren-f1"></div>
+            <div class="checkbox-item"><label for="mclaren-12c">McLaren MP4-12C</label><input type="checkbox" id="mclaren-12c" name="mclaren-12c" value="mclaren-12c"></div>
+            <div class="checkbox-item"><label for="mclaren-p1">McLaren P1</label><input type="checkbox" id="mclaren-p1" name="mclaren-p1" value="mclaren-p1"></div>
+            <div class="checkbox-item"><label for="mclaren-650s">McLaren 650S</label><input type="checkbox" id="mclaren-650s" name="mclaren-650s" value="mclaren-650s"></div>
+            <div class="checkbox-item"><label for="mclaren-570s">McLaren 570S</label><input type="checkbox" id="mclaren-570s" name="mclaren-570s" value="mclaren-570s"></div>
+            <div class="checkbox-item"><label for="mclaren-600lt">McLaren 600LT</label><input type="checkbox" id="mclaren-600lt" name="mclaren-600lt" value="mclaren-600lt"></div>
+            <div class="checkbox-item"><label for="mclaren-720s">McLaren 720S</label><input type="checkbox" id="mclaren-720s" name="mclaren-720s" value="mclaren-720s"></div>
+            <div class="checkbox-item"><label for="mclaren-senna">McLaren Senna</label><input type="checkbox" id="mclaren-senna" name="mclaren-senna" value="mclaren-senna"></div>
+            <div class="checkbox-item"><label for="mclaren-speedtail">McLaren Speedtail</label><input type="checkbox" id="mclaren-speedtail" name="mclaren-speedtail" value="mclaren-speedtail"></div>
+            <div class="checkbox-item"><label for="mclaren-gt">McLaren GT</label><input type="checkbox" id="mclaren-gt" name="mclaren-gt" value="mclaren-gt"></div>
+            <div class="checkbox-item"><label for="mclaren-artura">McLaren Artura</label><input type="checkbox" id="mclaren-artura" name="mclaren-artura" value="mclaren-artura"></div>
+            <div class="checkbox-item"><label for="mclaren-750s">McLaren 750S</label><input type="checkbox" id="mclaren-750s" name="mclaren-750s" value="mclaren-750s"></div>
+            <div class="checkbox-item"><label for="mclaren-w1">McLaren W1</label><input type="checkbox" id="mclaren-w1" name="mclaren-w1" value="mclaren-w1"></div>
+        </div> 
+
+         <div class="brand-section">
+            <div class="brand-title">BYD Auto</div>
+            <div class="checkbox-item"><label for="byd-qin">BYD Qin</label><input type="checkbox" id="byd-qin" name="byd-qin" value="byd-qin"></div>
+            <div class="checkbox-item"><label for="byd-tang">BYD Tang</label><input type="checkbox" id="byd-tang" name="byd-tang" value="byd-tang"></div>
+            <div class="checkbox-item"><label for="byd-song">BYD Song</label><input type="checkbox" id="byd-song" name="byd-song" value="byd-song"></div>
+            <div class="checkbox-item"><label for="byd-yuan">BYD Yuan</label><input type="checkbox" id="byd-yuan" name="byd-yuan" value="byd-yuan"></div>
+            <div class="checkbox-item"><label for="byd-han">BYD Han</label><input type="checkbox" id="byd-han" name="byd-han" value="byd-han"></div>
+            <div class="checkbox-item"><label for="byd-dolphin">BYD Dolphin</label><input type="checkbox" id="byd-dolphin" name="byd-dolphin" value="byd-dolphin"></div>
+            <div class="checkbox-item"><label for="byd-seal">BYD Seal</label><input type="checkbox" id="byd-seal" name="byd-seal" value="byd-seal"></div>
+            <div class="checkbox-item"><label for="byd-atto3">BYD Atto 3</label><input type="checkbox" id="byd-atto3" name="byd-atto3" value="byd-atto3"></div>
+            <div class="checkbox-item"><label for="byd-seagull">BYD Seagull</label><input type="checkbox" id="byd-seagull" name="byd-seagull" value="byd-seagull"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Denza</div>
+            <div class="checkbox-item"><label for="denza-d9">Denza D9</label><input type="checkbox" id="denza-d9" name="denza-d9" value="denza-d9"></div>
+            <div class="checkbox-item"><label for="denza-n7">Denza N7</label><input type="checkbox" id="denza-n7" name="denza-n7" value="denza-n7"></div>
+            <div class="checkbox-item"><label for="denza-n8">Denza N8</label><input type="checkbox" id="denza-n8" name="denza-n8" value="denza-n8"></div>
+            <div class="checkbox-item"><label for="denza-z9">Denza Z9</label><input type="checkbox" id="denza-z9" name="denza-z9" value="denza-z9"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Yangwang</div>
+            <div class="checkbox-item"><label for="yangwang-u8">Yangwang U8</label><input type="checkbox" id="yangwang-u8" name="yangwang-u8" value="yangwang-u8"></div>
+            <div class="checkbox-item"><label for="yangwang-u9">Yangwang U9</label><input type="checkbox" id="yangwang-u9" name="yangwang-u9" value="yangwang-u9"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Fangchengbao</div>
+            <div class="checkbox-item"><label for="fangchengbao-bao5">Fangchengbao Bao 5</label><input type="checkbox" id="fangchengbao-bao5" name="fangchengbao-bao5" value="fangchengbao-bao5"></div>
+            <div class="checkbox-item"><label for="fangchengbao-bao8">Fangchengbao Bao 8</label><input type="checkbox" id="fangchengbao-bao8" name="fangchengbao-bao8" value="fangchengbao-bao8"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Chery</div>
+            <div class="checkbox-item"><label for="chery-tiggo4">Chery Tiggo 4</label><input type="checkbox" id="chery-tiggo4" name="chery-tiggo4" value="chery-tiggo4"></div>
+            <div class="checkbox-item"><label for="chery-tiggo7">Chery Tiggo 7</label><input type="checkbox" id="chery-tiggo7" name="chery-tiggo7" value="chery-tiggo7"></div>
+            <div class="checkbox-item"><label for="chery-tiggo8">Chery Tiggo 8</label><input type="checkbox" id="chery-tiggo8" name="chery-tiggo8" value="chery-tiggo8"></div>
+            <div class="checkbox-item"><label for="chery-arrizo5">Chery Arrizo 5</label><input type="checkbox" id="chery-arrizo5" name="chery-arrizo5" value="chery-arrizo5"></div>
+            <div class="checkbox-item"><label for="chery-arrizo8">Chery Arrizo 8</label><input type="checkbox" id="chery-arrizo8" name="chery-arrizo8" value="chery-arrizo8"></div>
+            <div class="checkbox-item"><label for="chery-omoda5">Chery Omoda 5</label><input type="checkbox" id="chery-omoda5" name="chery-omoda5" value="chery-omoda5"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Omoda</div>
+            <div class="checkbox-item"><label for="omoda-c5">Omoda C5</label><input type="checkbox" id="omoda-c5" name="omoda-c5" value="omoda-c5"></div>
+            <div class="checkbox-item"><label for="omoda-e5">Omoda E5</label><input type="checkbox" id="omoda-e5" name="omoda-e5" value="omoda-e5"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Jaecoo</div>
+            <div class="checkbox-item"><label for="jaecoo-j7">Jaecoo J7</label><input type="checkbox" id="jaecoo-j7" name="jaecoo-j7" value="jaecoo-j7"></div>
+            <div class="checkbox-item"><label for="jaecoo-j8">Jaecoo J8</label><input type="checkbox" id="jaecoo-j8" name="jaecoo-j8" value="jaecoo-j8"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Haval</div>
+            <div class="checkbox-item"><label for="haval-h6">Haval H6</label><input type="checkbox" id="haval-h6" name="haval-h6" value="haval-h6"></div>
+            <div class="checkbox-item"><label for="haval-jolion">Haval Jolion</label><input type="checkbox" id="haval-jolion" name="haval-jolion" value="haval-jolion"></div>
+            <div class="checkbox-item"><label for="haval-h9">Haval H9</label><input type="checkbox" id="haval-h9" name="haval-h9" value="haval-h9"></div>
+            <div class="checkbox-item"><label for="haval-f7">Haval F7</label><input type="checkbox" id="haval-f7" name="haval-f7" value="haval-f7"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Wey</div>
+            <div class="checkbox-item"><label for="wey-coffee01">Wey Coffee 01</label><input type="checkbox" id="wey-coffee01" name="wey-coffee01" value="wey-coffee01"></div>
+            <div class="checkbox-item"><label for="wey-coffee02">Wey Coffee 02</label><input type="checkbox" id="wey-coffee02" name="wey-coffee02" value="wey-coffee02"></div>
+            <div class="checkbox-item"><label for="wey-mocca">Wey Mocca</label><input type="checkbox" id="wey-mocca" name="wey-mocca" value="wey-mocca"></div>
+            <div class="checkbox-item"><label for="wey-latte">Wey Latte</label><input type="checkbox" id="wey-latte" name="wey-latte" value="wey-latte"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Tank</div>
+            <div class="checkbox-item"><label for="tank-300">Tank 300</label><input type="checkbox" id="tank-300" name="tank-300" value="tank-300"></div>
+            <div class="checkbox-item"><label for="tank-400">Tank 400</label><input type="checkbox" id="tank-400" name="tank-400" value="tank-400"></div>
+            <div class="checkbox-item"><label for="tank-500">Tank 500</label><input type="checkbox" id="tank-500" name="tank-500" value="tank-500"></div>
+            <div class="checkbox-item"><label for="tank-700">Tank 700</label><input type="checkbox" id="tank-700" name="tank-700" value="tank-700"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Ora</div>
+            <div class="checkbox-item"><label for="ora-funkycat">Ora Funky Cat</label><input type="checkbox" id="ora-funkycat" name="ora-funkycat" value="ora-funkycat"></div>
+            <div class="checkbox-item"><label for="ora-goodcat">Ora Good Cat</label><input type="checkbox" id="ora-goodcat" name="ora-goodcat" value="ora-goodcat"></div>
+            <div class="checkbox-item"><label for="ora-lightningcat">Ora Lightning Cat</label><input type="checkbox" id="ora-lightningcat" name="ora-lightningcat" value="ora-lightningcat"></div>
+            <div class="checkbox-item"><label for="ora-balletcat">Ora Ballet Cat</label><input type="checkbox" id="ora-balletcat" name="ora-balletcat" value="ora-balletcat"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Beijing</div>
+            <div class="checkbox-item"><label for="beijing-bj40">Beijing BJ40</label><input type="checkbox" id="beijing-bj40" name="beijing-bj40" value="beijing-bj40"></div>
+            <div class="checkbox-item"><label for="beijing-bj60">Beijing BJ60</label><input type="checkbox" id="beijing-bj60" name="beijing-bj60" value="beijing-bj60"></div>
+            <div class="checkbox-item"><label for="beijing-bj80">Beijing BJ80</label><input type="checkbox" id="beijing-bj80" name="beijing-bj80" value="beijing-bj80"></div>
+            <div class="checkbox-item"><label for="beijing-x7">Beijing X7</label><input type="checkbox" id="beijing-x7" name="beijing-x7" value="beijing-x7"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Arcfox</div>
+            <div class="checkbox-item"><label for="arcfox-alphat">Arcfox Alpha-T</label><input type="checkbox" id="arcfox-alphat" name="arcfox-alphat" value="arcfox-alphat"></div>
+            <div class="checkbox-item"><label for="arcfox-alphas">Arcfox Alpha-S</label><input type="checkbox" id="arcfox-alphas" name="arcfox-alphas" value="arcfox-alphas"></div>
+            <div class="checkbox-item"><label for="arcfox-kaola">Arcfox Kaola</label><input type="checkbox" id="arcfox-kaola" name="arcfox-kaola" value="arcfox-kaola"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Foton</div>
+            <div class="checkbox-item"><label for="foton-tunland">Foton Tunland</label><input type="checkbox" id="foton-tunland" name="foton-tunland" value="foton-tunland"></div>
+
+           <div class="brand-section">
+            <div class="brand-title">Li Auto</div>
+            <div class="checkbox-item"><label for="li-l6">Li Auto L6</label><input type="checkbox" id="li-l6" name="li-l6" value="li-l6"></div>
+            <div class="checkbox-item"><label for="li-l7">Li Auto L7</label><input type="checkbox" id="li-l7" name="li-l7" value="li-l7"></div>
+            <div class="checkbox-item"><label for="li-l8">Li Auto L8</label><input type="checkbox" id="li-l8" name="li-l8" value="li-l8"></div>
+            <div class="checkbox-item"><label for="li-l9">Li Auto L9</label><input type="checkbox" id="li-l9" name="li-l9" value="li-l9"></div>
+            <div class="checkbox-item"><label for="li-mega">Li Auto Mega</label><input type="checkbox" id="li-mega" name="li-mega" value="li-mega"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Xiaomi Auto</div>
+            <div class="checkbox-item"><label for="xiaomi-su7">Xiaomi SU7</label><input type="checkbox" id="xiaomi-su7" name="xiaomi-su7" value="xiaomi-su7"></div>
+            <div class="checkbox-item"><label for="xiaomi-su7-ultra">Xiaomi SU7 Ultra</label><input type="checkbox" id="xiaomi-su7-ultra" name="xiaomi-su7-ultra" value="xiaomi-su7-ultra"></div>
+            <div class="checkbox-item"><label for="xiaomi-mx11">Xiaomi MX11</label><input type="checkbox" id="xiaomi-mx11" name="xiaomi-mx11" value="xiaomi-mx11"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Koenigsegg</div>
+            <div class="checkbox-item"><label for="koenigsegg-cc8s">Koenigsegg CC8S</label><input type="checkbox" id="koenigsegg-cc8s" name="koenigsegg-cc8s" value="koenigsegg-cc8s"></div>
+            <div class="checkbox-item"><label for="koenigsegg-ccx">Koenigsegg CCX</label><input type="checkbox" id="koenigsegg-ccx" name="koenigsegg-ccx" value="koenigsegg-ccx"></div>
+            <div class="checkbox-item"><label for="koenigsegg-agera">Koenigsegg Agera RS</label><input type="checkbox" id="koenigsegg-agera" name="koenigsegg-agera" value="koenigsegg-agera"></div>
+            <div class="checkbox-item"><label for="koenigsegg-regera">Koenigsegg Regera</label><input type="checkbox" id="koenigsegg-regera" name="koenigsegg-regera" value="koenigsegg-regera"></div>
+            <div class="checkbox-item"><label for="koenigsegg-jesko">Koenigsegg Jesko</label><input type="checkbox" id="koenigsegg-jesko" name="koenigsegg-jesko" value="koenigsegg-jesko"></div>
+            <div class="checkbox-item"><label for="koenigsegg-gemera">Koenigsegg Gemera</label><input type="checkbox" id="koenigsegg-gemera" name="koenigsegg-gemera" value="koenigsegg-gemera"></div>
+            <div class="checkbox-item"><label for="koenigsegg-cc850">Koenigsegg CC850</label><input type="checkbox" id="koenigsegg-cc850" name="koenigsegg-cc850" value="koenigsegg-cc850"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Pagani</div>
+            <div class="checkbox-item"><label for="pagani-zonda">Pagani Zonda</label><input type="checkbox" id="pagani-zonda" name="pagani-zonda" value="pagani-zonda"></div>
+            <div class="checkbox-item"><label for="pagani-huayra">Pagani Huayra</label><input type="checkbox" id="pagani-huayra" name="pagani-huayra" value="pagani-huayra"></div>
+            <div class="checkbox-item"><label for="pagani-utopia">Pagani Utopia</label><input type="checkbox" id="pagani-utopia" name="pagani-utopia" value="pagani-utopia"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Caterham</div>
+            <div class="checkbox-item"><label for="caterham-170">Caterham Seven 170</label><input type="checkbox" id="caterham-170" name="caterham-170" value="caterham-170"></div>
+            <div class="checkbox-item"><label for="caterham-360">Caterham Seven 360</label><input type="checkbox" id="caterham-360" name="caterham-360" value="caterham-360"></div>
+            <div class="checkbox-item"><label for="caterham-420">Caterham Seven 420</label><input type="checkbox" id="caterham-420" name="caterham-420" value="caterham-420"></div>
+            <div class="checkbox-item"><label for="caterham-620r">Caterham Seven 620R</label><input type="checkbox" id="caterham-620r" name="caterham-620r" value="caterham-620r"></div>
+            <div class="checkbox-item"><label for="caterham-projv">Caterham Project V</label><input type="checkbox" id="caterham-projv" name="caterham-projv" value="caterham-projv"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Ariel</div>
+            <div class="checkbox-item"><label for="ariel-atom">Ariel Atom</label><input type="checkbox" id="ariel-atom" name="ariel-atom" value="ariel-atom"></div>
+            <div class="checkbox-item"><label for="ariel-nomad">Ariel Nomad</label><input type="checkbox" id="ariel-nomad" name="ariel-nomad" value="ariel-nomad"></div>
+            <div class="checkbox-item"><label for="ariel-hipercar">Ariel Hipercar</label><input type="checkbox" id="ariel-hipercar" name="ariel-hipercar" value="ariel-hipercar"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Lucid Motors</div>
+            <div class="checkbox-item"><label for="lucid-pure">Lucid Air Pure</label><input type="checkbox" id="lucid-pure" name="lucid-pure" value="lucid-pure"></div>
+            <div class="checkbox-item"><label for="lucid-touring">Lucid Air Touring</label><input type="checkbox" id="lucid-touring" name="lucid-touring" value="lucid-touring"></div>
+            <div class="checkbox-item"><label for="lucid-gt">Lucid Air Grand Touring</label><input type="checkbox" id="lucid-gt" name="lucid-gt" value="lucid-gt"></div>
+            <div class="checkbox-item"><label for="lucid-sapphire">Lucid Air Sapphire</label><input type="checkbox" id="lucid-sapphire" name="lucid-sapphire" value="lucid-sapphire"></div>
+            <div class="checkbox-item"><label for="lucid-gravity">Lucid Gravity</label><input type="checkbox" id="lucid-gravity" name="lucid-gravity" value="lucid-gravity"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Rivian</div>
+            <div class="checkbox-item"><label for="rivian-r1t">Rivian R1T</label><input type="checkbox" id="rivian-r1t" name="rivian-r1t" value="rivian-r1t"></div>
+            <div class="checkbox-item"><label for="rivian-r1s">Rivian R1S</label><input type="checkbox" id="rivian-r1s" name="rivian-r1s" value="rivian-r1s"></div>
+            <div class="checkbox-item"><label for="rivian-r2">Rivian R2</label><input type="checkbox" id="rivian-r2" name="rivian-r2" value="rivian-r2"></div>
+            <div class="checkbox-item"><label for="rivian-r3">Rivian R3</label><input type="checkbox" id="rivian-r3" name="rivian-r3" value="rivian-r3"></div>
+            <div class="checkbox-item"><label for="rivian-r3x">Rivian R3X</label><input type="checkbox" id="rivian-r3x" name="rivian-r3x" value="rivian-r3x"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Mahindra</div>
+            <div class="checkbox-item"><label for="mahindra-thar">Mahindra Thar</label><input type="checkbox" id="mahindra-thar" name="mahindra-thar" value="mahindra-thar"></div>
+            <div class="checkbox-item"><label for="mahindra-xuv700">Mahindra XUV700</label><input type="checkbox" id="mahindra-xuv700" name="mahindra-xuv700" value="mahindra-xuv700"></div>
+            <div class="checkbox-item"><label for="mahindra-scorpio">Mahindra Scorpio-N</label><input type="checkbox" id="mahindra-scorpio" name="mahindra-scorpio" value="mahindra-scorpio"></div>
+            <div class="checkbox-item"><label for="mahindra-bolero">Mahindra Bolero</label><input type="checkbox" id="mahindra-bolero" name="mahindra-bolero" value="mahindra-bolero"></div>
+            <div class="checkbox-item"><label for="mahindra-xuv400">Mahindra XUV400 EV</label><input type="checkbox" id="mahindra-xuv400" name="mahindra-xuv400" value="mahindra-xuv400"></div>
+            <div class="checkbox-item"><label for="mahindra-roxor">Mahindra Roxor</label><input type="checkbox" id="mahindra-roxor" name="mahindra-roxor" value="mahindra-roxor"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Maruti Suzuki</div>
+            <div class="checkbox-item"><label for="maruti-alto">Maruti Suzuki Alto</label><input type="checkbox" id="maruti-alto" name="maruti-alto" value="maruti-alto"></div>
+            <div class="checkbox-item"><label for="maruti-wagonr">Maruti Suzuki WagonR</label><input type="checkbox" id="maruti-wagonr" name="maruti-wagonr" value="maruti-wagonr"></div>
+            <div class="checkbox-item"><label for="maruti-swift">Maruti Suzuki Swift</label><input type="checkbox" id="maruti-swift" name="maruti-swift" value="maruti-swift"></div>
+            <div class="checkbox-item"><label for="maruti-baleno">Maruti Suzuki Baleno</label><input type="checkbox" id="maruti-baleno" name="maruti-baleno" value="maruti-baleno"></div>
+            <div class="checkbox-item"><label for="maruti-brezza">Maruti Suzuki Brezza</label><input type="checkbox" id="maruti-brezza" name="maruti-brezza" value="maruti-brezza"></div>
+            <div class="checkbox-item"><label for="maruti-ertiga">Maruti Suzuki Ertiga</label><input type="checkbox" id="maruti-ertiga" name="maruti-ertiga" value="maruti-ertiga"></div>
+            <div class="checkbox-item"><label for="maruti-dzire">Maruti Suzuki Dzire</label><input type="checkbox" id="maruti-dzire" name="maruti-dzire" value="maruti-dzire"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Perodua</div>
+            <div class="checkbox-item"><label for="perodua-myvi">Perodua Myvi</label><input type="checkbox" id="perodua-myvi" name="perodua-myvi" value="perodua-myvi"></div> 
+
+              <div class="brand-section">
+            <div class="brand-title">InEOS Automotive</div>
+            <div class="checkbox-item"><label for="ineos-grenadier">InEOS Grenadier</label><input type="checkbox" id="ineos-grenadier" name="ineos-grenadier" value="ineos-grenadier"></div>
+            <div class="checkbox-item"><label for="ineos-quartermaster">InEOS Grenadier Quartermaster</label><input type="checkbox" id="ineos-quartermaster" name="ineos-quartermaster" value="ineos-quartermaster"></div>
+            <div class="checkbox-item"><label for="ineos-fusilier">InEOS Fusilier</label><input type="checkbox" id="ineos-fusilier" name="ineos-fusilier" value="ineos-fusilier"></div>
+        </div>
+
+        <div class="brand-section">
+            <div class="brand-title">Baojun</div>
+            <div class="checkbox-item"><label for="baojun-yep">Baojun Yep</label><input type="checkbox" id="baojun-yep" name="baojun-yep" value="baojun-yep"></div>
+            <div class="checkbox-item"><label for="baojun-yep-plus">Baojun Yep Plus</label><input type="checkbox" id="baojun-yep-plus" name="baojun-yep-plus" value="baojun-yep-plus"></div>
+            <div class="checkbox-item"><label for="baojun-cloud">Baojun Cloud</label><input type="checkbox" id="baojun-cloud" name="baojun-cloud" value="baojun-cloud"></div>
+            <div class="checkbox-item"><label for="baojun-kiwi-ev">Baojun KiWi EV</label><input type="checkbox" id="baojun-kiwi-ev" name="baojun-kiwi-ev" value="baojun-kiwi-ev"></div>
+            <div class="checkbox-item"><label for="baojun-510">Baojun 510</label><input type="checkbox" id="baojun-510" name="baojun-510" value="baojun-510"></div>
+            <div class="checkbox-item"><label for="baojun-730">Baojun 730</label><input type="checkbox" id="baojun-730" name="baojun-730" value="baojun-730"></div>
+            <div class="checkbox-item"><label for="baojun-rc5">Baojun RC-5</label><input type="checkbox" id="baojun-rc5" name="baojun-rc5" value="baojun-rc5"></div>
+            <div class="checkbox-item"><label for="baojun-rm5">Baojun RM-5</label><input type="checkbox" id="baojun-rm5" name="baojun-rm5" value="baojun-rm5"></div>
+        </div>
+        </div>
+         <br>
+         <br>
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>
